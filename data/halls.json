@@ -4,7 +4,13 @@
     "title_zh": "COMPUTEX 2026 展館、開放時間與交通",
     "verified_at": "2026-06-01",
     "source": "COMPUTEX official visitor info page + official guide handbook",
-    "official_info_url": "https://www.computextaipei.com.tw/zh-tw/menu/49C82382AF144873D0636733C6861689/info.html"
+    "official_info_url": "https://www.computextaipei.com.tw/zh-tw/menu/49C82382AF144873D0636733C6861689/info.html",
+    "verification_levels": {
+      "officially_stated": "官方網站／官方售票頁逐字可查的事實",
+      "officially_derived": "由官方資料推導（如展區與攤位號對應）",
+      "advisory": "整理者的觀展策略建議（交通時間估計、避坑心法），非官方陳述"
+    },
+    "note": "transportation 區段的時間估計與建議屬 advisory 級；venues/hours/tickets 屬 officially_stated 級"
   },
   "event": {
     "name": "COMPUTEX TAIPEI 2026",
@@ -63,7 +69,7 @@
           "zones": [
             { "code": "R", "theme_zh": "AI 運算及系統解決方案區 + BC Award 得獎展示區（R 區入口左側）", "key_exhibitors_zh": ["神雲", "神準", "英業達", "精佳"] },
             { "code": "R(storage)", "theme_zh": "儲存及管理解決方案區", "key_exhibitors_zh": ["創見", "華擎", "中環", "博帝", "華騰"] },
-            { "code": "S", "theme_zh": "InnoVEX 新創區（⚠️ 6/5 主要活動已結束）", "key_exhibitors_zh": ["各國新創"] },
+            { "code": "S", "theme_zh": "InnoVEX 新創區（近 500 家新創、22 國、9 個國家館；展區開放至 6/5，Pitch 頒獎典禮已於 6/4 舉行）", "key_exhibitors_zh": ["各國新創", "法國/日本/韓國/泰國/澳洲/以色列/加拿大/義大利/捷克 國家館"] },
             { "code": "7F", "theme_zh": "Keynote & Forum 會場（7F，6/5 已無 keynote）", "key_exhibitors_zh": [] }
           ]
         },
@@ -123,12 +129,14 @@
     "public_day_only": "2026-06-05",
     "options": [
       {
-        "type": "業界人士登錄",
-        "type_en": "Industry professional registration",
+        "type": "專業人士／投資者登錄",
+        "type_en": "Industry professional / investor registration",
         "price": 0,
         "valid_dates": "2026-06-02 ~ 2026-06-05",
-        "how_zh": "線上預先登錄已截止；可於展前一日（6/1）起至展期間到現場報到櫃台辦理，攜帶 2 張名片（科技／相關產業）",
-        "note_zh": "免費、全展期可入場，國內專業人士憑 QR code 直接掃描入場"
+        "how_zh": "線上預先登錄已截止；符合專業人士／投資者資格者，可於展期間至現場報到櫃台登錄取得入場 QR code",
+        "note_zh": "免費、全展期可入場。建議攜帶名片與工作相關證明，資格以現場審核為準",
+        "verification_status": "officially_stated",
+        "source_zh": "官方參觀資訊頁（verified 2026-06-01）"
       },
       {
         "type": "一般民眾票",
@@ -138,7 +146,9 @@
         "valid_dates": "2026-06-05",
         "how_zh": "TaiTIX 線上購票（https://taitix.com.tw/event/detail/100003/computex26）或現場購票（售票至 15:00）",
         "restrictions_zh": ["僅 6/5 可入場", "未滿 18 歲不能入場", "優待票限 65 歲以上長者／身心障礙者及 1 名陪同者（現場購買）"],
-        "venue_access_warning_zh": "⚠️ 部分媒體報導民眾票僅能進世貿一館（南港為專業展館不開放），但官方售票頁與參觀資訊頁未明確寫此限制。要去南港的人請以官方最新公告或現場詢問為準；最保險是辦業界登錄。"
+        "note_zh": "官方參觀資訊與售票頁均列出南港 1、2 館（至 15:30）與世貿一館（至 16:30）的 6/5 開放時間。若現場票務或動線臨時調整，以官方 APP 與入口公告為準",
+        "verification_status": "officially_stated",
+        "source_zh": "官方參觀資訊頁 + TaiTIX 售票頁（verified 2026-06-01）"
       }
     ]
   }

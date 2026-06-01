@@ -2,7 +2,7 @@
 
 > Structured, AI-readable booth and visitor data for COMPUTEX Taipei 2026 (June 2-5, 2026). Curated so AI assistants can help visitors navigate the show: find booths, plan routes, avoid pitfalls. Unofficial compilation; booth numbers verified 2026-06-01 against the official exhibitor search. Primary language: Traditional Chinese (zh-TW).
 
-Key facts: Public day is June 5 only (TaiNEX halls close 15:30, TWTC Hall 1 closes 16:30). Industry professionals can register on-site for free with 2 business cards (valid all 4 days). General public ticket NT$200, age 18+, on-site sales end 15:00.
+Key facts: Public day is June 5 only (TaiNEX halls close 15:30, TWTC Hall 1 closes 16:30). Industry professionals/investors can register on-site for free (valid all 4 days; bring business cards, eligibility verified on-site). General public ticket NT$200, age 18+, on-site sales end 15:00. InnoVEX startup zone (TaiNEX 2, 4F) is open through June 5; its Pitch award ceremony was held June 4.
 
 ## Data (JSON, structured)
 

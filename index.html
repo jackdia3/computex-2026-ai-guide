@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COMPUTEX 2026 AI Guide — 讓 AI 幫你逛展</title>
+<meta name="description" content="非官方 COMPUTEX 2026 攤位/觀展結構化資料。貼網址給 ChatGPT/Claude/Gemini，AI 直接幫你規劃逛展路線。">
+<style>
+  body { font-family: -apple-system, "Noto Sans TC", "Microsoft JhengHei", sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; line-height: 1.7; color: #1a1a1a; }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  .sub { color: #666; margin-top: 0; }
+  .warn { background: #fff7e0; border-left: 4px solid #e6a700; padding: 10px 14px; border-radius: 4px; font-size: .95rem; }
+  .copy-block { background: #f4f4f4; border: 1px solid #ddd; border-radius: 8px; padding: 14px; font-family: ui-monospace, monospace; font-size: .9rem; white-space: pre-wrap; word-break: break-all; }
+  .btn { display: inline-block; background: #1a1a1a; color: #fff; padding: 8px 18px; border-radius: 8px; text-decoration: none; margin: 6px 8px 6px 0; font-size: .95rem; }
+  .btn.secondary { background: #fff; color: #1a1a1a; border: 1.5px solid #1a1a1a; }
+  table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; }
+  th { background: #f4f4f4; }
+  footer { margin-top: 48px; font-size: .85rem; color: #888; border-top: 1px solid #eee; padding-top: 16px; }
+  a { color: #0b63c4; }
+</style>
+</head>
+<body>
+
+<h1>🤖 COMPUTEX 2026 AI Guide</h1>
+<p class="sub">讓 AI 幫你逛展 — 攤位位置、開放時間、避坑資訊的結構化資料</p>
+
+<p class="warn">⚠️ 非官方專案：與 COMPUTEX、外貿協會（TAITRA）、台北市電腦公會（TCA）無關。攤位號 2026-06-01 對官方參展商查詢驗證；現場以官方 APP 與公告為準。</p>
+
+<h2>怎麼用</h2>
+<p><strong>把下面這段貼給任何能上網的 AI</strong>（ChatGPT / Claude / Gemini / Perplexity），改成你的需求：</p>
+
+<div class="copy-block">請讀取 https://jackdia3.github.io/computex-2026-ai-guide/llms-full.txt
+然後幫我規劃 6/5 COMPUTEX 行程：我想看 AI 伺服器跟機器人，下午 3 點要離開。</div>
+
+<p>AI 不能上網？<a href="llms-full.txt">開啟 llms-full.txt</a> → 全選複製 → 貼到 AI 對話框即可。</p>
+
+<p>
+  <a class="btn" href="llms-full.txt">📄 llms-full.txt（給 AI 的完整資料）</a>
+  <a class="btn secondary" href="https://github.com/jackdia3/computex-2026-ai-guide">GitHub Repo</a>
+</p>
+
+<h2>30 秒重點</h2>
+<table>
+  <tr><th>重點</th><th>內容</th></tr>
+  <tr><td>展期</td><td>2026/06/02 – 06/05（一般民眾僅 6/5 可購票入場）</td></tr>
+  <tr><td>⏰ 6/5 時間</td><td><strong>南港 1、2 館 09:30–15:30</strong>／世貿一館 09:30–16:30</td></tr>
+  <tr><td>入場</td><td>科技業工作者：現場辦專業人士登錄（免費，帶名片，現場審核）<br>一般民眾：NT$200（TaiTIX 或現場購票至 15:00，滿 18 歲）</td></tr>
+  <tr><td>交通</td><td>兩館之間捷運約 30–40 分鐘；14:00–14:45 為壅塞高峰</td></tr>
+</table>
+
+<h2>給人看的文件</h2>
+<ul>
+  <li><a href="docs/visiting-info.md">觀展資訊</a> — 票務／入場／避坑清單</li>
+  <li><a href="docs/booth-guide.md">必看攤位導覽</a> — 攤位號＋可以問 PM 什麼</li>
+</ul>
+
+<h2>給 AI / 開發者的結構化資料</h2>
+<ul>
+  <li><a href="llms.txt">llms.txt</a> — AI 入口（llmstxt.org 標準）</li>
+  <li><a href="data/exhibitors.json">data/exhibitors.json</a> — 19 家精選攤位（號碼已驗證）＋ 60+ 家 zone 級資料</li>
+  <li><a href="data/halls.json">data/halls.json</a> — 三館樓層展區／開放時間／交通／票務</li>
+  <li><a href="data/tour-routes.json">data/tour-routes.json</a> — 官方導覽團 12 條路線</li>
+</ul>
+
+<footer>
+  整理：<a href="https://github.com/jackdia3">Jack Tseng</a>（個人專案）· 授權 CC BY 4.0 · 資料驗證日 2026-06-01<br>
+  權利人（TAITRA / TCA / 參展廠商）若認為內容不妥，請開 <a href="https://github.com/jackdia3/computex-2026-ai-guide/issues">GitHub Issue</a>，48 小時內配合移除或修改。
+</footer>
+
+</body>
+</html>
