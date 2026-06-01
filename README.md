@@ -31,6 +31,7 @@
 ### 方式 3：人類直接看 / 列印
 
 - 🖨 **[一頁攻略 PDF（A4 雙面）](print/cheatsheet-a4.pdf)** — 下載直接列印帶去現場（[HTML 原始檔](print/cheatsheet-source.html)可自行修改）
+- 📊 **[攻略簡報（12 張 PPTX）](slides/computex-2026-slides.pptx)** — 圖文版攻略，適合分享給朋友 / 社群內部講解用
 - [觀展資訊](docs/visiting-info.md) — 票務 / 入場 / 避坑清單
 - [必看攤位導覽](docs/booth-guide.md) — 攤位號 + 可以問 PM 什麼
 
@@ -49,9 +50,12 @@ computex-2026-ai-guide/
 ├── docs/
 │   ├── visiting-info.md  ← 觀展資訊（人類可讀版）
 │   └── booth-guide.md    ← 必看攤位導覽（人類可讀版）
-└── print/
-    ├── cheatsheet-a4.pdf     ← 一頁攻略印刷版（A4 雙面）
-    └── cheatsheet-source.html ← 印刷版原始檔（可自行修改重印）
+├── print/
+│   ├── cheatsheet-a4.pdf     ← 一頁攻略印刷版（A4 雙面）
+│   └── cheatsheet-source.html ← 印刷版原始檔（可自行修改重印）
+└── slides/
+    ├── computex-2026-slides.pptx ← 攻略簡報（12 張，圖文版）
+    └── SOURCES.md                 ← 簡報圖片來源聲明
 ```
 
 ## ⚡ 30 秒重點
