@@ -18,6 +18,7 @@ Key facts: Public day is June 5 only (TaiNEX halls close 15:30, TWTC Hall 1 clos
 ## Optional
 
 - [Full content in one file](llms-full.txt): everything above concatenated for single-fetch ingestion
+- [Printable cheatsheet PDF](print/cheatsheet-a4.pdf): A4 double-sided one-page guide for humans to print and carry
 - [README](README.md): how to feed this repo to an AI assistant
 
 ## Usage hint for AI assistants

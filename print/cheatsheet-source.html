@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<title>COMPUTEX 2026 · 6/5 大眾日一頁攻略</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Noto Sans CJK TC', 'Noto Sans TC', 'Noto Serif CJK TC', sans-serif;
+    color: #222; font-size: 9.5pt; line-height: 1.45;
+  }
+  .page {
+    width: 210mm; height: 297mm; padding: 11mm 12mm 9mm;
+    page-break-after: always; position: relative; overflow: hidden;
+  }
+  .page:last-child { page-break-after: avoid; }
+
+  /* ===== 標題 ===== */
+  .header { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 3px solid #222; padding-bottom: 4mm; margin-bottom: 5mm; }
+  .header h1 { font-size: 19pt; letter-spacing: .5px; }
+  .header .date { font-size: 13pt; font-weight: 700; }
+  .header .side-tag { font-size: 9pt; color: #777; font-weight: 400; }
+
+  h2 {
+    font-size: 12pt; margin: 5mm 0 2.5mm; padding-left: 3mm;
+    border-left: 5px solid #e8541e;
+  }
+  h2 .en { font-size: 8.5pt; color: #999; font-weight: 400; margin-left: 2mm; }
+
+  /* ===== 表格 ===== */
+  table { width: 100%; border-collapse: collapse; }
+  th, td { border: 1px solid #bbb; padding: 1.6mm 2.2mm; text-align: left; vertical-align: top; }
+  th { background: #f1ece4; font-size: 9pt; white-space: nowrap; }
+  td { font-size: 9pt; }
+  .schedule td:first-child { white-space: nowrap; font-weight: 700; width: 22mm; }
+  .booth-table td:first-child { width: 44mm; }
+  .booth-table .booth-no { color: #e8541e; font-weight: 800; }
+
+  /* ===== 強調框 ===== */
+  .pit-box { background: #fdf3e7; border: 2px dashed #e8541e; border-radius: 3mm; padding: 3mm 4mm; margin-top: 2mm; }
+  .pit-box ol { margin-left: 5.5mm; }
+  .pit-box li { margin-bottom: 1.2mm; }
+  .tip-box { background: #eef3f7; border-radius: 3mm; padding: 3mm 4mm; }
+  .quote-box { background: #f5f5f0; border-left: 4px solid #999; padding: 2.5mm 4mm; font-size: 9pt; margin-top: 2mm; }
+
+  .hl { background: linear-gradient(transparent 55%, #ffe28a 55%); font-weight: 700; padding: 0 1px; }
+  .red { color: #cc3311; font-weight: 700; }
+  .star { color: #e8541e; font-weight: 800; letter-spacing: -1px; }
+
+  /* ===== checklist ===== */
+  .checklist { display: flex; flex-wrap: wrap; gap: 1.5mm 6mm; }
+  .checklist span { font-size: 9.5pt; }
+  .checklist span::before { content: "☐ "; font-size: 11pt; }
+
+  /* ===== 分流卡 ===== */
+  .routes { display: flex; gap: 3mm; }
+  .route-card { flex: 1; border: 1.5px solid #222; border-radius: 2.5mm; padding: 2.5mm 3mm; }
+  .route-card b { display: block; font-size: 10.5pt; margin-bottom: 1mm; }
+
+  .footer {
+    position: absolute; bottom: 7mm; left: 12mm; right: 12mm;
+    font-size: 7.5pt; color: #888; border-top: 1px solid #ccc; padding-top: 1.8mm;
+    display: flex; justify-content: space-between;
+  }
+  .two-col { display: flex; gap: 5mm; }
+  .two-col > div { flex: 1; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════ A 面：路線與時程 ═══════════════════ -->
+<div class="page">
+  <div class="header">
+    <h1>COMPUTEX 2026 一頁攻略</h1>
+    <div class="date">6/5 <span style="font-size:10pt">(五) 大眾日</span> <span class="side-tag">A 面 · 路線時程</span></div>
+  </div>
+
+  <h2>開始前 30 秒<span class="en">Before you go</span></h2>
+  <table>
+    <tr><th>入場</th><td><span class="hl">科技業工作者 → 現場辦專業人士登錄</span>（免費，帶名片，現場審核）<br>一般民眾 → NT$200 票（taitix.com.tw 預購省排隊，現場只賣到 15:00）</td></tr>
+    <tr><th>⏰ 硬限制</th><td><span class="red">南港 15:30 關　／　世貿 16:30 關</span>　·　未滿 18 歲不能入場</td></tr>
+    <tr><th>Keynote</th><td>都結束了（6/1-6/2 已過）— 今天重心是<b>逛攤＋打卡</b></td></tr>
+    <tr><th>加碼</th><td>InnoVEX 新創區（南港 2 館 4F，近 500 家、22 國）開放至 6/5；頒獎活動 6/4 已辦完</td></tr>
+    <tr><th>心法</th><td>今天比的是<span class="hl">腳程規劃</span>，不是早起搶位</td></tr>
+  </table>
+
+  <h2>建議路線：世貿 AM → 南港 PM<span class="en">Suggested route</span></h2>
+  <table class="schedule">
+    <tr><th>時間</th><th>動作</th><th>移動</th></tr>
+    <tr><td>09:30</td><td>進場<b>世貿 1 館</b></td><td>捷運「台北101/世貿站」或「市政府站」步行</td></tr>
+    <tr><td>09:30-12:00</td><td>世貿：<b>立端 → 所羅門 → 肯微</b> → 機器人主題館</td><td>館內（攤位見 B 面）</td></tr>
+    <tr><td>12:00-12:30</td><td>午餐／補水</td><td>世貿館內或周邊</td></tr>
+    <tr><td class="red">12:30</td><td><span class="hl">移動到南港</span>（板南線 → 南港展覽館站 5 號出口）</td><td>約 25-40 分鐘</td></tr>
+    <tr><td>13:15-15:30</td><td>南港：2 館 4F（<b>BC Award + 神雲</b>）→ 1 館 1F（<b>維諦 + 光寶</b> + 宜鼎 + 研華）</td><td>館內（攤位見 B 面）</td></tr>
+    <tr><td>15:30</td><td>南港閉館 → 收工（體力夠可回世貿補到 16:30）</td><td>—</td></tr>
+  </table>
+
+  <h2>三個會毀掉行程的坑<span class="en">Pitfalls</span></h2>
+  <div class="pit-box">
+    <ol>
+      <li><b>14:00-14:45 是交通泥沼高峰</b> — 移動請在 12:30-13:00 完成，午餐順便避峰</li>
+      <li><b>南港 15:30 就關</b> — 想看液冷 AI 伺服器跟機房設施的，下午一定要留給南港</li>
+      <li><b>排隊超過 15 分鐘的攤直接跳過</b> — 大眾日人潮多，時程比單一攤位重要</li>
+    </ol>
+  </div>
+
+  <h2>體力管理<span class="en">Energy</span></h2>
+  <div class="tip-box">
+    逛展是長跑，會累就找座位休息，不用每攤都衝　·　手機開飛航模式省電＋專心看　·
+    行動電源帶著　·　人潮容易資訊過載，過載就先離場喝水
+  </div>
+
+  <div class="footer">
+    <span>COMPUTEX 2026 觀展攻略 · 整理 Jack Tseng · 2026-06-01</span>
+    <span>翻到背面看「攤位 + 可以問什麼」→</span>
+  </div>
+</div>
+
+<!-- ═══════════════════ B 面：攤位與問題 ═══════════════════ -->
+<div class="page">
+  <div class="header">
+    <h1>必看攤位 ＋ 可以問什麼</h1>
+    <div class="date"><span class="side-tag">B 面 · 攤位指南</span></div>
+  </div>
+
+  <h2>上午 · 世貿 1 館<span class="en">TWTC Hall 1（~16:30）</span></h2>
+  <table class="booth-table">
+    <tr><th>攤位</th><th>為什麼值得看</th><th>可以問 PM 什麼</th></tr>
+    <tr>
+      <td><span class="star">★★</span> <b>立端 Lanner</b><br><span class="booth-no">A1227a</span>（機器人區）</td>
+      <td>端對端 Agentic AI 示範，語音指令控制機械手臂</td>
+      <td>「這是真的 AI 在規劃，還是錄好的 demo？」「失敗的時候怎麼處理？」</td>
+    </tr>
+    <tr>
+      <td><span class="star">★</span> <b>所羅門 Solomon</b><br><span class="booth-no">A0811a</span>（機器人區）</td>
+      <td>機器人視覺全球四強，畫面震撼好拍</td>
+      <td>「demo 成功一次跟量產可用，中間差什麼？」</td>
+    </tr>
+    <tr>
+      <td><span class="star">★</span> <b>肯微 Compuware</b><br><span class="booth-no">D0617a</span>（體驗館區）</td>
+      <td>AI 機櫃電源方案，水冷 Power Shelf</td>
+      <td>「一櫃 AI 伺服器要吃多少電？電從哪裡來？」</td>
+    </tr>
+    <tr>
+      <td><b>機器人主題館</b><br><span class="booth-no">A0618</span></td>
+      <td>研華／神雲／研揚等多家聯展，打卡密度最高</td>
+      <td>—</td>
+    </tr>
+  </table>
+
+  <h2>下午 · 南港展覽館<span class="en">TaiNEX 1 & 2（~15:30）</span></h2>
+  <table class="booth-table">
+    <tr><th>攤位</th><th>為什麼值得看</th><th>可以問 PM 什麼</th></tr>
+    <tr>
+      <td><b>BC Award 展區</b><br>2 館 4F R 區入口左側</td>
+      <td>官方獎項得獎產品一站全覽</td>
+      <td>30 分鐘掃完全年度 highlight</td>
+    </tr>
+    <tr>
+      <td><span class="star">★★</span> <b>神雲 MiTAC</b><br>2 館 4F <span class="booth-no">R0504</span></td>
+      <td>AMD 頂規液冷 AI 伺服器整機</td>
+      <td>「液冷壞一台怎麼修？」「最小可用配置是什麼？」</td>
+    </tr>
+    <tr>
+      <td><span class="star">★★</span> <b>維諦 Vertiv</b><br>1 館 1F <span class="booth-no">J0818</span></td>
+      <td>機房電力＋散熱＋UPS 整體方案</td>
+      <td>「小團隊從一張卡擴到幾台 GPU 伺服器，第一個瓶頸是電、熱還是場地？」</td>
+    </tr>
+    <tr>
+      <td><span class="star">★</span> <b>光寶 LITEON</b><br>1 館 1F <span class="booth-no">J0617a</span></td>
+      <td>NVIDIA 合作的資料中心電力架構</td>
+      <td>「AI 機房的電力架構今年改了什麼？」</td>
+    </tr>
+    <tr>
+      <td><b>宜鼎 Innodisk</b><br>1 館 1F <span class="booth-no">K0106</span></td>
+      <td>企業自建 AI 助理方案</td>
+      <td>「企業要自己架 AI 助理，最小要準備什麼？」</td>
+    </tr>
+    <tr>
+      <td><b>研華 Advantech</b><br>1 館 1F <span class="booth-no">K0603a</span></td>
+      <td>AI 機器人感知到行動全流程</td>
+      <td>「沒有 AI 背景的人要上手，要學多久？」</td>
+    </tr>
+  </table>
+
+  <div class="quote-box">
+    <b>問 PM 的通用心法</b>：看 demo 別只看炫，問「<b>失敗怎麼辦</b>」最有料。PM 只能回行銷話術、給不出實測數字 → 標「待查」，不用現場下結論。<br>
+    別走錯：電子紙區的 Solomon Systech（D0136）是另一家香港 IC 公司，不是所羅門機器人。
+  </div>
+
+  <h2>不想跟全程？自由分流<span class="en">Pick your route</span></h2>
+  <div class="routes">
+    <div class="route-card"><b>A 線 · 拍照打卡</b>世貿 1 館：所羅門／立端／機器人主題館</div>
+    <div class="route-card"><b>B 線 · AI 伺服器</b>南港 1 館 J 區 + 2 館 4F：維諦／神雲／光寶</div>
+    <div class="route-card"><b>C 線 · 新創交流</b>南港 2 館 4F S 區：InnoVEX 近 500 家新創</div>
+  </div>
+
+  <h2>帶出門 checklist<span class="en">Checklist</span></h2>
+  <div class="checklist">
+    <span>名片（辦專業登錄／交流）</span>
+    <span>票或身分證</span>
+    <span>行動電源</span>
+    <span>水＋零食</span>
+    <span>好走的鞋</span>
+    <span>這張攻略</span>
+  </div>
+
+  <div class="footer">
+    <span>攤位號 verified 2026-06-01（官方參展商查詢）· 現場以官方 APP 為準</span>
+    <span>讓 AI 幫你排路線：<b>jackdia3.github.io/computex-2026-ai-guide</b></span>
+  </div>
+</div>
+
+</body>
+</html>

@@ -28,8 +28,9 @@
 
 開啟 [llms-full.txt](https://jackdia3.github.io/computex-2026-ai-guide/llms-full.txt) → 全選複製 → 貼到 AI 對話框 → 接著問你的行程問題。內容約 800 行，多數 AI 都吃得下。
 
-### 方式 3：人類直接看
+### 方式 3：人類直接看 / 列印
 
+- 🖨 **[一頁攻略 PDF（A4 雙面）](print/cheatsheet-a4.pdf)** — 下載直接列印帶去現場（[HTML 原始檔](print/cheatsheet-source.html)可自行修改）
 - [觀展資訊](docs/visiting-info.md) — 票務 / 入場 / 避坑清單
 - [必看攤位導覽](docs/booth-guide.md) — 攤位號 + 可以問 PM 什麼
 
@@ -45,9 +46,12 @@ computex-2026-ai-guide/
 │   ├── exhibitors.json   ← 19 家精選攤位（號碼已驗證）+ 60+ 家 zone 級資料
 │   ├── halls.json        ← 三館樓層展區 / 開放時間 / 交通 / 票務
 │   └── tour-routes.json  ← 官方導覽團 12 條路線
-└── docs/
-    ├── visiting-info.md  ← 觀展資訊（人類可讀版）
-    └── booth-guide.md    ← 必看攤位導覽（人類可讀版）
+├── docs/
+│   ├── visiting-info.md  ← 觀展資訊（人類可讀版）
+│   └── booth-guide.md    ← 必看攤位導覽（人類可讀版）
+└── print/
+    ├── cheatsheet-a4.pdf     ← 一頁攻略印刷版（A4 雙面）
+    └── cheatsheet-source.html ← 印刷版原始檔（可自行修改重印）
 ```
 
 ## ⚡ 30 秒重點
