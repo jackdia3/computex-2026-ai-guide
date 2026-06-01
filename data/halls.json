@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "title": "COMPUTEX 2026 Venues, Hours & Access",
+    "title_zh": "COMPUTEX 2026 展館、開放時間與交通",
+    "verified_at": "2026-06-01",
+    "source": "COMPUTEX official visitor info page + official guide handbook",
+    "official_info_url": "https://www.computextaipei.com.tw/zh-tw/menu/49C82382AF144873D0636733C6861689/info.html"
+  },
+  "event": {
+    "name": "COMPUTEX TAIPEI 2026",
+    "theme": "AI TOGETHER",
+    "dates": { "start": "2026-06-02", "end": "2026-06-05" },
+    "public_day": "2026-06-05",
+    "scale": { "exhibitors": 1500, "booths": 6000 },
+    "tech_trends_zh": ["AI 運算", "機器人與智慧移動", "次世代科技", "綠能永續"]
+  },
+  "venues": [
+    {
+      "id": "tainex1",
+      "name_en": "Taipei Nangang Exhibition Center, Hall 1 (TaiNEX 1)",
+      "name_zh": "台北南港展覽館 1 館",
+      "hours": {
+        "2026-06-02": "09:30-17:30",
+        "2026-06-03": "09:30-17:30",
+        "2026-06-04": "09:30-17:30",
+        "2026-06-05": "09:30-15:30"
+      },
+      "access_zh": "捷運板南線／文湖線「南港展覽館站」5 號出口直達",
+      "focus_zh": "AI 運算、先進通訊、關鍵零組件、系統整合、電競與智慧移動",
+      "floors": [
+        {
+          "floor": "1F",
+          "zones": [
+            { "code": "I", "theme_zh": "零組件及先進電源技術區（散熱、機殼、電源）", "key_exhibitors_zh": ["宇瞻", "廣穎", "芝奇", "迎廣", "十銓"] },
+            { "code": "J", "theme_zh": "AI 運算與科技區（AI 伺服器、機房設施）", "key_exhibitors_zh": ["維諦", "光寶", "雙鴻", "勤誠", "健策", "微星", "威聯通", "研揚"] },
+            { "code": "K", "theme_zh": "先進通訊及網路產品區／Edge AI", "key_exhibitors_zh": ["宜鼎", "研華", "技嘉", "樺漢"] }
+          ]
+        },
+        {
+          "floor": "4F",
+          "zones": [
+            { "code": "L/M", "theme_zh": "系統及解決方案區（AI PC 生態系 + RISC-V 主題館）", "key_exhibitors_zh": ["宏碁", "華碩", "微星", "技嘉", "仁寶", "聯發科", "台達", "RISC-V 主題館"] },
+            { "code": "N", "theme_zh": "智慧移動與無人載具區", "key_exhibitors_zh": ["義隆", "中興保全", "TADA 主題館"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tainex2",
+      "name_en": "Taipei Nangang Exhibition Center, Hall 2 (TaiNEX 2)",
+      "name_zh": "台北南港展覽館 2 館",
+      "hours": {
+        "2026-06-02": "09:30-17:30",
+        "2026-06-03": "09:30-17:30",
+        "2026-06-04": "09:30-17:30",
+        "2026-06-05": "09:30-15:30"
+      },
+      "access_zh": "捷運「南港展覽館站」步行，與 1 館之間有空橋連通",
+      "focus_zh": "儲存管理、消費周邊、智慧商業與工業物聯網、InnoVEX 新創",
+      "floors": [
+        {
+          "floor": "4F",
+          "zones": [
+            { "code": "R", "theme_zh": "AI 運算及系統解決方案區 + BC Award 得獎展示區（R 區入口左側）", "key_exhibitors_zh": ["神雲", "神準", "英業達", "精佳"] },
+            { "code": "R(storage)", "theme_zh": "儲存及管理解決方案區", "key_exhibitors_zh": ["創見", "華擎", "中環", "博帝", "華騰"] },
+            { "code": "S", "theme_zh": "InnoVEX 新創區（⚠️ 6/5 主要活動已結束）", "key_exhibitors_zh": ["各國新創"] },
+            { "code": "7F", "theme_zh": "Keynote & Forum 會場（7F，6/5 已無 keynote）", "key_exhibitors_zh": [] }
+          ]
+        },
+        {
+          "floor": "1F",
+          "zones": [
+            { "code": "P", "theme_zh": "工業物聯網及嵌入式解決方案區", "key_exhibitors_zh": ["威強電", "智愛", "凌航"] },
+            { "code": "Q", "theme_zh": "消費性電子周邊產品區 + 智慧商業服務", "key_exhibitors_zh": ["安鈦克", "虹堡", "飛捷", "振樺"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "twtc1",
+      "name_en": "Taipei World Trade Center, Hall 1 (TWTC Hall 1)",
+      "name_zh": "台北世貿中心一館",
+      "hours": {
+        "2026-06-02": "09:30-17:30",
+        "2026-06-03": "09:30-17:30",
+        "2026-06-04": "09:30-17:30",
+        "2026-06-05": "09:30-16:30"
+      },
+      "access_zh": "捷運淡水信義線「台北101/世貿站」1 號出口；或板南線「市政府站」步行約 12-15 分鐘",
+      "focus_zh": "AI 機器人、科技應用體驗、電子紙創新",
+      "floors": [
+        {
+          "floor": "1F",
+          "zones": [
+            { "code": "A", "theme_zh": "AI 機器人區（服務型機器人、AI 視覺、無人系統）— 最適合拍照打卡", "key_exhibitors_zh": ["所羅門", "立端", "上銀", "聰泰", "佳能", "永彰", "機器人與邊緣 AI 主題館", "人機互動主題館"] },
+            { "code": "D(epaper)", "theme_zh": "電子紙產業專區", "key_exhibitors_zh": ["元太", "台灣夏普", "達擎", "PocketBook", "VUSION", "Pricer"] },
+            { "code": "D(tech)", "theme_zh": "科技應用暨體驗館（企業 AI、沉浸式體驗）", "key_exhibitors_zh": ["肯微", "德隆", "僑威", "貝瑞特"] }
+          ]
+        }
+      ]
+    }
+  ],
+  "transportation": {
+    "between_venues_zh": {
+      "twtc_to_nangang": [
+        {
+          "method": "板南線（建議）",
+          "steps_zh": "世貿一館 → 步行約 12-15 分鐘到「市政府站」→ 板南線往南港方向 → 「南港展覽館站」5 號出口",
+          "duration_min": 30
+        },
+        {
+          "method": "淡水信義線轉文湖線",
+          "steps_zh": "「台北101/世貿站」→ 淡水信義線 → 「大安站」轉文湖線 → 「南港展覽館站」",
+          "duration_min": 38,
+          "note_zh": "文湖線車廂小，展期人多時較擠"
+        }
+      ],
+      "warning_zh": "⚠️ 14:00-14:45 是兩館間交通壅塞高峰；6/5 南港 15:30 閉館，跨館移動建議在 12:30-13:00 完成（順便吃午餐避峰）"
+    },
+    "taxi_fallback_zh": "捷運故障時：世貿 → 南港計程車約 20-25 分鐘、NT$250-300"
+  },
+  "tickets": {
+    "public_day_only": "2026-06-05",
+    "options": [
+      {
+        "type": "業界人士登錄",
+        "type_en": "Industry professional registration",
+        "price": 0,
+        "valid_dates": "2026-06-02 ~ 2026-06-05",
+        "how_zh": "線上預先登錄已截止；可於展前一日（6/1）起至展期間到現場報到櫃台辦理，攜帶 2 張名片（科技／相關產業）",
+        "note_zh": "免費、全展期可入場，國內專業人士憑 QR code 直接掃描入場"
+      },
+      {
+        "type": "一般民眾票",
+        "type_en": "General public ticket",
+        "price": 200,
+        "concession_price": 100,
+        "valid_dates": "2026-06-05",
+        "how_zh": "TaiTIX 線上購票（https://taitix.com.tw/event/detail/100003/computex26）或現場購票（售票至 15:00）",
+        "restrictions_zh": ["僅 6/5 可入場", "未滿 18 歲不能入場", "優待票限 65 歲以上長者／身心障礙者及 1 名陪同者（現場購買）"],
+        "venue_access_warning_zh": "⚠️ 部分媒體報導民眾票僅能進世貿一館（南港為專業展館不開放），但官方售票頁與參觀資訊頁未明確寫此限制。要去南港的人請以官方最新公告或現場詢問為準；最保險是辦業界登錄。"
+      }
+    ]
+  }
+}

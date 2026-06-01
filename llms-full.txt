@@ -1,0 +1,798 @@
+# COMPUTEX 2026 AI Guide
+
+> Structured, AI-readable booth and visitor data for COMPUTEX Taipei 2026 (June 2-5, 2026). Curated so AI assistants can help visitors navigate the show: find booths, plan routes, avoid pitfalls. Unofficial compilation; booth numbers verified 2026-06-01 against the official exhibitor search. Primary language: Traditional Chinese (zh-TW).
+
+Key facts: Public day is June 5 only (TaiNEX halls close 15:30, TWTC Hall 1 closes 16:30). Industry professionals can register on-site for free with 2 business cards (valid all 4 days). General public ticket NT$200, age 18+, on-site sales end 15:00.
+
+## Data (JSON, structured)
+
+- [Exhibitors & booths](data/exhibitors.json): 19 key exhibitors with verified booth numbers, zones, highlights, and suggested questions to ask; plus zone-level lists for ~60 more exhibitors
+- [Venues, hours & tickets](data/halls.json): all 3 venues with floors/zones, daily opening hours, MRT access, inter-venue transportation, ticket options
+- [Official tour routes](data/tour-routes.json): 12 official guided-tour routes (TWTC + Nangang) with stop-by-stop highlights
+
+## Docs (Markdown, human-readable)
+
+- [Visiting info](docs/visiting-info.md): tickets, entry options, pitfall list, checklist, official links
+- [Booth guide](docs/booth-guide.md): curated must-see booths with "what to ask the PM" suggestions and 3 tech trends to watch
+
+## Optional
+
+- [Full content in one file](llms-full.txt): everything above concatenated for single-fetch ingestion
+- [README](README.md): how to feed this repo to an AI assistant
+
+## Usage hint for AI assistants
+
+When a user asks "where is X" or "plan my COMPUTEX visit", load data/exhibitors.json and data/halls.json first. Always remind users: Nangang halls close at 15:30 on June 5; cross-venue travel takes 30-40 minutes; verify booth numbers in the official COMPUTEX app on-site.
+
+===================================================================
+# FULL CONTENT BELOW (docs + data)
+===================================================================
+
+<!-- ===== docs/visiting-info.md ===== -->
+# COMPUTEX 2026 觀展資訊（票務 / 入場 / 避坑）
+
+> 資料驗證日：2026-06-01。出發前以[官方參觀資訊](https://www.computextaipei.com.tw/zh-tw/menu/49C82382AF144873D0636733C6861689/info.html)最新公告為準。
+
+## 基本資料
+
+| 項目 | 內容 |
+|---|---|
+| 展期 | 2026/06/02（二）– 06/05（五） |
+| 展館 | 南港展覽館 1、2 館 + 世貿一館 + 台北國際會議中心(TICC) |
+| 規模 | 1,500 家廠商 / 6,000 個展位 |
+| 主題 | AI TOGETHER — AI 運算 / 機器人與智慧移動 / 次世代科技 / 綠能永續 |
+
+## 6/5（五）大眾日開放時間
+
+| 展館 | 時間 |
+|---|---|
+| 南港展覽館 1、2 館 | **09:30 – 15:30**（提早關！） |
+| 世貿一館 | **09:30 – 16:30** |
+
+## 入場方式
+
+| | 業界人士登錄 | 一般民眾購票 |
+|---|---|---|
+| 費用 | **免費** | NT$200（優待票 $100） |
+| 可入場日 | 6/2 – 6/5 全展期 | **僅 6/5** |
+| 辦理方式 | 線上預先登錄已截止 → **現場登錄**（報到櫃台，6/1 起） | [TaiTIX 線上購票](https://taitix.com.tw/event/detail/100003/computex26) 或現場購票 |
+| 需要什麼 | 名片 ×2（科技 / 相關產業工作即可） | 身分證件（滿 18 歲） |
+
+### ⚠️ 三個關鍵提醒
+
+1. **有名片就走業界登錄** — 免費且不受民眾票限制。
+2. **民眾票的展館範圍有爭議** — 部分媒體報導民眾票只能進世貿一館，官方未明確寫。要去南港的人行前確認，或直接辦業界登錄。
+3. **未滿 18 歲不能入場**；現場售票只到 **15:00**。
+
+## 避坑清單
+
+| # | 坑 | 怎麼避 |
+|---|---|---|
+| 1 | 南港 15:30 就關 | 想看 AI 伺服器 / 機房設施的，南港排上午或一早 |
+| 2 | 11:00–13:00 人潮最高峰 | 開門 09:30 就進場，先衝人氣攤位 |
+| 3 | 14:00–14:45 兩館之間交通壅塞 | 跨館移動安排在 12:30–13:00（順便吃午餐避峰） |
+| 4 | Keynote 都結束了（6/1–6/2 已過） | 6/5 重心是逛攤 + 互動 demo，不要期待演講 |
+| 5 | InnoVEX 新創區活動已收尾 | Pitch / Demo / Award 6/4 結束，別專程跑南港 2 館 S 區 |
+| 6 | 熱門攤位排隊 15 分鐘以上 | 直接跳過先逛別攤；時程比單一攤位重要 |
+| 7 | 資訊過載 + 腳力崩潰 | 帶水 + 行動電源；累了找休息區 |
+| 8 | 撤展提前 | 大眾日下午部分攤位開始收，想深聊的攤位上午去 |
+
+## 帶出門 checklist
+
+- [ ] 名片 ×2（辦業界登錄）或 TaiTIX 電子票 + 身分證
+- [ ] 行動電源、水、簡單零食
+- [ ] 舒服的鞋（一天 1.5 萬步起跳）
+- [ ] 後背包（雙手空出來拍照）
+
+## 官方連結
+
+| 連結 | 用途 |
+|---|---|
+| https://www.computextaipei.com.tw/ | 官方網站（導覽團報名 / 最新公告） |
+| https://www.computextaipei.com.tw/zh-tw/menu/49C82382AF144873D0636733C6861689/info.html | 參觀資訊 |
+| https://taitix.com.tw/event/detail/100003/computex26 | TaiTIX 購票 |
+| https://www.computextaipei.com.tw/en/exhibitor/index.html | 參展商 / 攤位查詢 |
+| 官方 APP | App Store / Google Play 搜「COMPUTEX」 |
+
+<!-- ===== docs/booth-guide.md ===== -->
+# COMPUTEX 2026 必看攤位導覽（含「可以問什麼」）
+
+> 攤位號 verified 2026-06-01（官方參展商查詢）。現場找不到攤位時，用官方 APP 搜廠商名最快。
+> 完整結構化資料見 [`../data/exhibitors.json`](../data/exhibitors.json)。
+
+## 世貿一館（09:30–16:30）
+
+| 攤位 | 為什麼值得看 | 可以問 PM 什麼 |
+|---|---|---|
+| 🔥🔥 **立端 Lanner**（**A1227a**·機器人區） | 端對端 Agentic AI 完整示範，語音指令控制機械手臂 | 「這是真的 AI 在規劃，還是錄好的 demo？」「失敗的時候怎麼處理？」 |
+| 🔥 **所羅門 Solomon**（**A0811a**·機器人區） | 機器人視覺全球四強，用「看」的理解空間再行動，畫面震撼好拍 | 「demo 成功一次跟量產可用，中間差什麼？」 |
+| 🔥 **肯微 Compuware**（**D0617a**·體驗館區） | AI 機櫃電源方案，水冷 Power Shelf | 「一櫃 AI 伺服器要吃多少電？電從哪裡來？」 |
+| **機器人與邊緣 AI 主題館**（**A0618**） | 研華 / 神雲 / 研揚等多家聯展，機器人 demo 集中區，打卡密度最高 | — |
+| **電子紙產業專區**（元太等） | 斷電仍顯示的雙穩態技術、彩色電子標籤，一家公司聚 40 家生態夥伴 | 「電子紙跟 LCD 的成本交叉點在哪？」 |
+
+⚠️ 別走錯：電子紙區的 Solomon Systech（D0136）是香港顯示 IC 公司，不是所羅門機器人。
+
+## 南港 1 館（09:30–15:30）
+
+| 攤位 | 為什麼值得看 | 可以問 PM 什麼 |
+|---|---|---|
+| 🔥🔥 **維諦 Vertiv**（1F **J0818**） | 機房電力 + 散熱 + UPS 整體方案 | 「小團隊從一張卡擴到幾台 GPU 伺服器，第一個瓶頸是電、熱還是場地？」 |
+| 🔥 **光寶 LITEON**（1F **J0617a**） | NVIDIA 合作的資料中心電力架構 | 「AI 機房的電力架構今年改了什麼？」 |
+| **宜鼎 Innodisk**（1F **K0106**） | 企業自建 AI 助理方案 | 「企業要自己架 AI 助理，最小要準備什麼？」 |
+| **研華 Advantech**（1F **K0603a**） | AI 機器人感知到行動全流程 | 「沒有 AI 背景的人要上手，要學多久？」 |
+| **雙鴻 Auras**（1F J0806）/ **勤誠**（J0317a）/ **健策**（J0118） | 液冷散熱供應鏈三連發（散熱模組 / 機殼 / 均熱片） | 「液冷壞一台怎麼修？」比「可散幾 kW」更有料 |
+| **AI PC 生態系 + RISC-V 主題館**（4F） | 台灣 AI PC 全景 + 開放架構生態 | 「開放架構落地的真實代價？商用支援誰負責？」 |
+
+## 南港 2 館（09:30–15:30）
+
+| 攤位 | 為什麼值得看 | 可以問 PM 什麼 |
+|---|---|---|
+| **BC Award 得獎展示區**（4F R 區入口左側） | 官方獎項得獎產品一站全覽，30 min 掃完全年度 highlight | — |
+| 🔥🔥 **神雲 MiTAC**（4F **R0504**） | AMD 頂規液冷 AI 伺服器整機 | 「液冷壞一台怎麼修？」「最小可用配置是什麼？」 |
+| **神準 Senao**（4F **R0219**） | 資料中心交換器 + 網路安全 | 「AI 機房內部網路的瓶頸在哪一段？」 |
+
+## 問 PM 的通用心法
+
+> 1. 看 demo 別只看炫，問「**失敗怎麼辦**」最有料。
+> 2. 如果 PM 只能回行銷話術、給不出實測數字 → 標「待查」，不用在現場下結論。
+> 3. 大眾日 PM 已經累了 — 問題精簡，一次問一兩個就好。
+
+## 三大技術趨勢（今年值得帶著看的視角）
+
+1. **AI 機櫃電力鏈重構** — 電源廠都在講 rack 級電力架構（Power Shelf、BBU、800V DC）。看點：Vertiv / 光寶 / 肯微。
+2. **液冷比的是「可維運性」** — 不再只是能不能散熱，而是壞了怎麼修。看點：雙鴻 / 勤誠 / 神雲。
+3. **機器人 demo 要拆著看** — demo 成功 ≠ 量產可用。看點：立端 / 所羅門 / 研華。問「推論跑哪、失敗怎麼復原」。
+
+<!-- ===== data/exhibitors.json ===== -->
+```json
+{
+  "meta": {
+    "title": "COMPUTEX 2026 Exhibitor Booth Data (Curated)",
+    "title_zh": "COMPUTEX 2026 參展廠商攤位資料（精選整理）",
+    "event_dates": "2026-06-02 ~ 2026-06-05",
+    "verified_at": "2026-06-01",
+    "source": "COMPUTEX official exhibitor search (computextaipei.com.tw) + official guide handbook + official tour route PDFs",
+    "disclaimer": "Unofficial compilation for visitor convenience. Booth numbers verified 2026-06-01 against official exhibitor search; always cross-check with the official COMPUTEX app on-site.",
+    "disclaimer_zh": "非官方整理，僅供觀展便利。攤位號 2026-06-01 對官方參展商查詢驗證；現場請以官方 APP 為準。",
+    "official_search_url": "https://www.computextaipei.com.tw/en/exhibitor/index.html"
+  },
+  "exhibitors": [
+    {
+      "id": "lanner",
+      "name_en": "Lanner Electronics Inc.",
+      "name_zh": "立端科技",
+      "venue": "TWTC Hall 1",
+      "venue_zh": "世貿一館",
+      "zone": "Robotics",
+      "zone_zh": "AI 機器人區",
+      "booth": "A1227a",
+      "priority": "must-see",
+      "categories": ["agentic-ai", "edge-ai"],
+      "highlights_zh": ["端對端 Agentic AI 完整示範", "AstraEdge™ AI 平台", "語音指令控制機械手臂"],
+      "questions_to_ask_zh": [
+        "這個 Agentic AI demo 是真的 AI 在規劃，還是寫死的腳本？",
+        "失敗（誤辨識／規劃錯誤）的時候系統怎麼處理？"
+      ]
+    },
+    {
+      "id": "solomon",
+      "name_en": "Solomon Technology Corp.",
+      "name_zh": "所羅門",
+      "venue": "TWTC Hall 1",
+      "venue_zh": "世貿一館",
+      "zone": "Robotics",
+      "zone_zh": "AI 機器人區",
+      "booth": "A0811a",
+      "priority": "must-see",
+      "categories": ["physical-ai", "robotics", "machine-vision"],
+      "highlights_zh": ["VLA 人形機器人（全球四強之一）", "語音指令即時驅動機器人", "Super Vision 遠距 AI 視覺辨識"],
+      "questions_to_ask_zh": ["demo 成功一次跟量產可用，中間差什麼？"],
+      "warning_zh": "別走錯：電子紙區的 Solomon Systech（D0136）是香港顯示 IC 公司，與所羅門無關"
+    },
+    {
+      "id": "compuware",
+      "name_en": "Compuware Technology Inc.",
+      "name_zh": "肯微科技",
+      "venue": "TWTC Hall 1",
+      "venue_zh": "世貿一館",
+      "zone": "TechXperience",
+      "zone_zh": "科技應用暨體驗館",
+      "booth": "D0617a",
+      "priority": "must-see",
+      "categories": ["power", "ai-rack"],
+      "highlights_zh": ["AI Rack 全方位電源解決方案", "水冷 Power Shelf", "80 PLUS Ruby 最高能效認證"],
+      "questions_to_ask_zh": ["一櫃 AI 伺服器要吃多少電？電從哪裡來？"]
+    },
+    {
+      "id": "robotics-pavilion",
+      "name_en": "Robotics & Edge AI Pavilion (joint booth)",
+      "name_zh": "機器人與邊緣 AI 主題館（聯展攤）",
+      "venue": "TWTC Hall 1",
+      "venue_zh": "世貿一館",
+      "zone": "Robotics",
+      "zone_zh": "AI 機器人區",
+      "booth": "A0618",
+      "priority": "must-see",
+      "categories": ["robotics", "edge-ai"],
+      "highlights_zh": ["研華／神雲／研揚等多家聯展", "Intel OpenVINO 驅動 AI 落地", "12 家夥伴聯合生態展出"],
+      "members_zh": ["研華 Advantech", "神雲 MiTAC", "研揚 AAEON", "等 12 家"]
+    },
+    {
+      "id": "mitac",
+      "name_en": "MiTAC Computing Technology Corp.",
+      "name_zh": "神雲科技",
+      "venue": "TaiNEX 2",
+      "venue_zh": "南港展覽館 2 館",
+      "floor": "4F",
+      "zone": "AI Computing & System Integration Solution",
+      "zone_zh": "R 區 AI 運算及系統解決方案區",
+      "booth": "R0504",
+      "priority": "must-see",
+      "categories": ["ai-server", "liquid-cooling"],
+      "highlights_zh": ["AMD 頂規液冷 AI 伺服器整機方案", "算力＋儲存＋冷卻整合"],
+      "questions_to_ask_zh": [
+        "液冷方案壞一台怎麼修？台灣現場維修能力？",
+        "最小可用配置是什麼？中小型客戶（1-2 台）接不接？"
+      ],
+      "secondary_booths": [{"venue": "TWTC Hall 1", "zone": "Robotics", "booth": "A0618", "note_zh": "機器人主題館聯展"}]
+    },
+    {
+      "id": "vertiv",
+      "name_en": "Vertiv (Taiwan) Co., Ltd.",
+      "name_zh": "維諦",
+      "venue": "TaiNEX 1",
+      "venue_zh": "南港展覽館 1 館",
+      "floor": "1F",
+      "zone": "AI Computing & Tech",
+      "zone_zh": "J 區 AI 運算與科技區",
+      "booth": "J0818",
+      "priority": "must-see",
+      "categories": ["power", "cooling", "datacenter-infra"],
+      "highlights_zh": ["UPS 電源＋熱管理＋IT 基礎架構", "資料中心與邊緣站點關鍵設施"],
+      "questions_to_ask_zh": [
+        "小團隊從一張卡擴到 4-6 台 GPU 伺服器，第一個瓶頸是電、熱、UPS 還是場地？",
+        "100kW 以下的 single rack / 微型 AI 機房方案，lead time 跟 sizing 怎麼算？"
+      ]
+    },
+    {
+      "id": "liteon",
+      "name_en": "LITEON TECHNOLOGY",
+      "name_zh": "光寶科技",
+      "venue": "TaiNEX 1",
+      "venue_zh": "南港展覽館 1 館",
+      "floor": "1F",
+      "zone": "AI Computing & Tech",
+      "zone_zh": "J 區 AI 運算與科技區",
+      "booth": "J0617a",
+      "priority": "recommended",
+      "categories": ["power", "networking", "datacenter-infra"],
+      "highlights_zh": ["NVIDIA 合作 AI 通訊網路方案", "資料中心電力架構（電源＋通訊＋交通三領域）"],
+      "questions_to_ask_zh": ["AI 機房的電力架構今年改了什麼？"]
+    },
+    {
+      "id": "auras",
+      "name_en": "AURAS Technology Co., Ltd.",
+      "name_zh": "雙鴻科技",
+      "venue": "TaiNEX 1",
+      "venue_zh": "南港展覽館 1 館",
+      "floor": "1F",
+      "zone": "AI Computing & Tech",
+      "zone_zh": "J 區 AI 運算與科技區",
+      "booth": "J0806",
+      "priority": "worth-visiting",
+      "categories": ["cooling"],
+      "highlights_zh": ["筆電＋伺服器液冷散熱", "NB／伺服器 OEM/ODM 散熱製造"],
+      "questions_to_ask_zh": ["液冷壞了怎麼修？流量監控跟漏液隔離怎麼做？"]
+    },
+    {
+      "id": "chenbro",
+      "name_en": "Chenbro Micom Co., LTD.",
+      "name_zh": "勤誠興業",
+      "venue": "TaiNEX 1",
+      "venue_zh": "南港展覽館 1 館",
+      "floor": "1F",
+      "zone": "AI Computing & Tech",
+      "zone_zh": "J 區 AI 運算與科技區",
+      "booth": "J0317a",
+      "priority": "worth-visiting",
+      "categories": ["chassis", "rack"],
+      "highlights_zh": ["伺服器機殼＋存儲機殼＋機架整合", "資料中心與邊緣運算機殼 OEM/ODM"]
+    },
+    {
+      "id": "jentech",
+      "name_en": "Jentech Precision Industrial CO., LTD",
+      "name_zh": "健策精密",
+      "venue": "TaiNEX 1",
+      "venue_zh": "南港展覽館 1 館",
+      "floor": "1F",
+      "zone": "AI Computing & Tech",
+      "zone_zh": "J 區 AI 運算與科技區",
+      "booth": "J0118",
+      "priority": "worth-visiting",
+      "categories": ["cooling", "components"],
+      "highlights_zh": ["CPU/GPU 均熱片", "高精密沖壓散熱元件"]
+    },
+    {
+      "id": "msi",
+      "name_en": "Micro-Star International Co., Ltd.",
+      "name_zh": "微星科技",
+      "venue": "TaiNEX 1",
+      "venue_zh": "南港展覽館 1 館",
+      "floor": "1F",
+      "zone": "AI Computing & Tech",
+      "zone_zh": "J 區 AI 運算與科技區",
+      "booth": "J0605a",
+      "priority": "worth-visiting",
+      "categories": ["ai-pc", "edge-ai", "consumer"],
+      "highlights_zh": ["AI PC 至工業車用全品類", "Edge AI Box 工業電腦"],
+      "secondary_booths": [{"venue": "TaiNEX 1", "floor": "4F", "zone": "System Integration Solution", "booth": "L0118", "note_zh": "4F 系統整合區第二攤"}]
+    },
+    {
+      "id": "qnap",
+      "name_en": "QNAP Systems, Inc.",
+      "name_zh": "威聯通科技",
+      "venue": "TaiNEX 1",
+      "venue_zh": "南港展覽館 1 館",
+      "floor": "1F",
+      "zone": "AI Computing & Tech",
+      "zone_zh": "J 區 AI 運算與科技區",
+      "booth": "J1209a",
+      "priority": "worth-visiting",
+      "categories": ["storage", "nas", "edge-ai"],
+      "highlights_zh": ["NAS 儲存＋邊緣運算＋AI 分析整合", "資安韌性（READY & RECOVERY）"],
+      "questions_to_ask_zh": ["企業要在 NAS 上跑本地 AI 推論，最小規格是什麼？"]
+    },
+    {
+      "id": "aaeon",
+      "name_en": "AAEON Technology Inc.",
+      "name_zh": "研揚科技",
+      "venue": "TaiNEX 1",
+      "venue_zh": "南港展覽館 1 館",
+      "floor": "1F",
+      "zone": "AI Computing & Tech",
+      "zone_zh": "J 區 AI 運算與科技區",
+      "booth": "J1310",
+      "priority": "worth-visiting",
+      "categories": ["edge-ai", "industrial", "physical-ai"],
+      "highlights_zh": ["AI 邊緣電腦＋嵌入式主板", "智慧製造／城市／零售 AIoT 整合"],
+      "secondary_booths": [{"venue": "TWTC Hall 1", "zone": "Robotics", "booth": "A0618", "note_zh": "機器人主題館聯展"}]
+    },
+    {
+      "id": "innodisk",
+      "name_en": "Innodisk Corporation",
+      "name_zh": "宜鼎國際",
+      "venue": "TaiNEX 1",
+      "venue_zh": "南港展覽館 1 館",
+      "floor": "1F",
+      "zone": "AI Computing & Tech",
+      "zone_zh": "K 區（AI 運算與科技區）",
+      "booth": "K0106",
+      "priority": "recommended",
+      "categories": ["storage", "edge-ai", "enterprise-ai"],
+      "highlights_zh": ["全球工業存儲市佔第一", "企業自建 AI 助理解決方案"],
+      "questions_to_ask_zh": ["企業要自己架 AI 助理，最小要準備什麼（硬體＋資料＋人力）？"]
+    },
+    {
+      "id": "advantech",
+      "name_en": "Advantech Co., Ltd.",
+      "name_zh": "研華科技",
+      "venue": "TaiNEX 1",
+      "venue_zh": "南港展覽館 1 館",
+      "floor": "1F",
+      "zone": "Advanced Communication & Networking",
+      "zone_zh": "K 區 先進通訊及網路產品區",
+      "booth": "K0603a",
+      "priority": "recommended",
+      "categories": ["edge-ai", "industrial", "physical-ai", "robotics"],
+      "highlights_zh": ["AI 機器人從感知到行動全流程", "跨產業機器人模組化開發平台", "全球 IoT 嵌入式平台領導廠"],
+      "questions_to_ask_zh": ["沒有 AI 背景的人要上手你們的平台，要學多久？"],
+      "secondary_booths": [{"venue": "TWTC Hall 1", "zone": "Robotics", "booth": "A0618", "note_zh": "機器人主題館聯展"}]
+    },
+    {
+      "id": "gigabyte",
+      "name_en": "GIGABYTE TECHNOLOGY CO., LTD.",
+      "name_zh": "技嘉科技",
+      "venue": "TaiNEX 1",
+      "venue_zh": "南港展覽館 1 館",
+      "floor": "1F",
+      "zone": "Advanced Communication & Networking",
+      "zone_zh": "K 區 先進通訊及網路產品區",
+      "booth": "K0802",
+      "priority": "recommended",
+      "categories": ["ai-server", "ai-pc", "consumer"],
+      "highlights_zh": ["AI 運算設備（消費電腦至企業資料中心全品類）", "turnkey cluster 方案"],
+      "secondary_booths": [{"venue": "TaiNEX 1", "floor": "4F", "zone": "System Integration Solution", "booth": "M0520", "note_zh": "4F 系統整合區第二攤"}]
+    },
+    {
+      "id": "ennoconn",
+      "name_en": "Ennoconn Corporation",
+      "name_zh": "樺漢科技",
+      "venue": "TaiNEX 1",
+      "venue_zh": "南港展覽館 1 館",
+      "floor": "1F",
+      "zone": "Advanced Communication & Networking",
+      "zone_zh": "K 區 先進通訊及網路產品區",
+      "booth": "K0816",
+      "priority": "worth-visiting",
+      "categories": ["industrial", "edge-ai", "iot"],
+      "highlights_zh": ["工業電腦＋AIoT 設備", "工業自動化與智慧零售端到雲方案"]
+    },
+    {
+      "id": "apacer",
+      "name_en": "Apacer Technology Inc.",
+      "name_zh": "宇瞻科技",
+      "venue": "TaiNEX 1",
+      "venue_zh": "南港展覽館 1 館",
+      "floor": "1F",
+      "zone": "Components & Advanced Power Tech",
+      "zone_zh": "I 區 零組件及先進電源技術區",
+      "booth": "I0108",
+      "priority": "worth-visiting",
+      "categories": ["storage", "industrial"],
+      "highlights_zh": ["記憶體模組＋工業用 SSD", "客製化儲存與物聯網整合"]
+    },
+    {
+      "id": "silicon-power",
+      "name_en": "Silicon Power Computer and Communications Inc.",
+      "name_zh": "廣穎電通",
+      "venue": "TaiNEX 1",
+      "venue_zh": "南港展覽館 1 館",
+      "floor": "1F",
+      "zone": "Components & Advanced Power Tech",
+      "zone_zh": "I 區 零組件及先進電源技術區",
+      "booth": "I0808",
+      "priority": "worth-visiting",
+      "categories": ["storage", "consumer"],
+      "highlights_zh": ["SSD＋記憶卡＋工業儲存", "消費性儲存產品"]
+    },
+    {
+      "id": "senao",
+      "name_en": "Senao Networks Inc.",
+      "name_zh": "神準科技",
+      "venue": "TaiNEX 2",
+      "venue_zh": "南港展覽館 2 館",
+      "floor": "4F",
+      "zone": "AI Computing & System Integration Solution",
+      "zone_zh": "R 區 AI 運算及系統解決方案區",
+      "booth": "R0219",
+      "priority": "worth-visiting",
+      "categories": ["networking", "security"],
+      "highlights_zh": ["無線網路＋網路安全＋資料中心交換器", "企業與資料中心網路整合"]
+    }
+  ],
+  "zone_level_exhibitors": {
+    "_note": "以下廠商位置來自官方導覽團路線 PDF（zone 級），確切攤位號請用官方 APP 查詢",
+    "TWTC Hall 1 - Robotics (AI 機器人區)": ["上銀 HIWIN", "聰泰 YUAN", "佳能 ABILITY", "永彰 EVERBRITE", "擷發 Microip", "高柏 T-Global", "融程 Winmate", "歐特明 oToBrite", "卡德爾 Qadir", "德州儀器 TI", "人機互動主題館 HRIS Pavilion"],
+    "TWTC Hall 1 - ePaper (電子紙產業專區)": ["元太 E Ink", "台灣夏普 SHARP", "振曜 NTX", "天鈺 Fitipower", "普爾斯 Pricer", "達擎 ADP", "VUSION Group", "PocketBook", "奇景光電 Himax", "SoluM"],
+    "TWTC Hall 1 - TechXperience (科技應用暨體驗館)": ["德隆", "僑威", "貝瑞特", "威世波", "高瑞電氣", "超能配電", "恆顥", "宇晨"],
+    "TaiNEX 2 - 4F Storage (儲存及管理解決方案區)": ["創見 Transcend", "華擎 ASRock", "英業達 Inventec", "芝奇 G.SKILL", "十銓 Team Group", "中環 CMC", "博帝 Patriot", "華騰"],
+    "TaiNEX 2 - 1F (智慧商業/工業物聯網/消費周邊)": ["威強電 IEI", "智愛 Premio", "凌航 Neo Forza", "虹堡 CASTLES", "振樺 POSIFLEX", "飛捷 Flytech", "磐儀 ARBOR", "安鈦克 Antec"],
+    "TaiNEX 1 - 4F System Integration (系統及解決方案/AI PC 生態系)": ["宏碁 Acer", "華碩 ASUS", "威剛 ADATA", "明基 BenQ", "仁寶 COMPAL", "台達 Delta", "鴻海 Foxconn", "聯發科 MediaTek", "和碩 Pegatron", "三星 Samsung", "趨勢 Trend Micro", "信驊 ASPEED", "RISC-V 主題館（台灣智慧物聯網產業協會）"],
+    "TaiNEX 1 - 4F Smart Mobility (智慧移動與無人載具區)": ["義隆 ELAN", "中興保全 SECOM", "馳諾瓦 Zerova", "貿聯 BizLink", "台灣先進車用主題館 TADA"],
+    "TaiNEX 2 - 4F InnoVEX (新創區)": ["各國新創（S 區攤位）— 注意：6/5 大眾日 InnoVEX 主要活動已結束"]
+  }
+}
+```
+
+<!-- ===== data/halls.json ===== -->
+```json
+{
+  "meta": {
+    "title": "COMPUTEX 2026 Venues, Hours & Access",
+    "title_zh": "COMPUTEX 2026 展館、開放時間與交通",
+    "verified_at": "2026-06-01",
+    "source": "COMPUTEX official visitor info page + official guide handbook",
+    "official_info_url": "https://www.computextaipei.com.tw/zh-tw/menu/49C82382AF144873D0636733C6861689/info.html"
+  },
+  "event": {
+    "name": "COMPUTEX TAIPEI 2026",
+    "theme": "AI TOGETHER",
+    "dates": { "start": "2026-06-02", "end": "2026-06-05" },
+    "public_day": "2026-06-05",
+    "scale": { "exhibitors": 1500, "booths": 6000 },
+    "tech_trends_zh": ["AI 運算", "機器人與智慧移動", "次世代科技", "綠能永續"]
+  },
+  "venues": [
+    {
+      "id": "tainex1",
+      "name_en": "Taipei Nangang Exhibition Center, Hall 1 (TaiNEX 1)",
+      "name_zh": "台北南港展覽館 1 館",
+      "hours": {
+        "2026-06-02": "09:30-17:30",
+        "2026-06-03": "09:30-17:30",
+        "2026-06-04": "09:30-17:30",
+        "2026-06-05": "09:30-15:30"
+      },
+      "access_zh": "捷運板南線／文湖線「南港展覽館站」5 號出口直達",
+      "focus_zh": "AI 運算、先進通訊、關鍵零組件、系統整合、電競與智慧移動",
+      "floors": [
+        {
+          "floor": "1F",
+          "zones": [
+            { "code": "I", "theme_zh": "零組件及先進電源技術區（散熱、機殼、電源）", "key_exhibitors_zh": ["宇瞻", "廣穎", "芝奇", "迎廣", "十銓"] },
+            { "code": "J", "theme_zh": "AI 運算與科技區（AI 伺服器、機房設施）", "key_exhibitors_zh": ["維諦", "光寶", "雙鴻", "勤誠", "健策", "微星", "威聯通", "研揚"] },
+            { "code": "K", "theme_zh": "先進通訊及網路產品區／Edge AI", "key_exhibitors_zh": ["宜鼎", "研華", "技嘉", "樺漢"] }
+          ]
+        },
+        {
+          "floor": "4F",
+          "zones": [
+            { "code": "L/M", "theme_zh": "系統及解決方案區（AI PC 生態系 + RISC-V 主題館）", "key_exhibitors_zh": ["宏碁", "華碩", "微星", "技嘉", "仁寶", "聯發科", "台達", "RISC-V 主題館"] },
+            { "code": "N", "theme_zh": "智慧移動與無人載具區", "key_exhibitors_zh": ["義隆", "中興保全", "TADA 主題館"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tainex2",
+      "name_en": "Taipei Nangang Exhibition Center, Hall 2 (TaiNEX 2)",
+      "name_zh": "台北南港展覽館 2 館",
+      "hours": {
+        "2026-06-02": "09:30-17:30",
+        "2026-06-03": "09:30-17:30",
+        "2026-06-04": "09:30-17:30",
+        "2026-06-05": "09:30-15:30"
+      },
+      "access_zh": "捷運「南港展覽館站」步行，與 1 館之間有空橋連通",
+      "focus_zh": "儲存管理、消費周邊、智慧商業與工業物聯網、InnoVEX 新創",
+      "floors": [
+        {
+          "floor": "4F",
+          "zones": [
+            { "code": "R", "theme_zh": "AI 運算及系統解決方案區 + BC Award 得獎展示區（R 區入口左側）", "key_exhibitors_zh": ["神雲", "神準", "英業達", "精佳"] },
+            { "code": "R(storage)", "theme_zh": "儲存及管理解決方案區", "key_exhibitors_zh": ["創見", "華擎", "中環", "博帝", "華騰"] },
+            { "code": "S", "theme_zh": "InnoVEX 新創區（⚠️ 6/5 主要活動已結束）", "key_exhibitors_zh": ["各國新創"] },
+            { "code": "7F", "theme_zh": "Keynote & Forum 會場（7F，6/5 已無 keynote）", "key_exhibitors_zh": [] }
+          ]
+        },
+        {
+          "floor": "1F",
+          "zones": [
+            { "code": "P", "theme_zh": "工業物聯網及嵌入式解決方案區", "key_exhibitors_zh": ["威強電", "智愛", "凌航"] },
+            { "code": "Q", "theme_zh": "消費性電子周邊產品區 + 智慧商業服務", "key_exhibitors_zh": ["安鈦克", "虹堡", "飛捷", "振樺"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "twtc1",
+      "name_en": "Taipei World Trade Center, Hall 1 (TWTC Hall 1)",
+      "name_zh": "台北世貿中心一館",
+      "hours": {
+        "2026-06-02": "09:30-17:30",
+        "2026-06-03": "09:30-17:30",
+        "2026-06-04": "09:30-17:30",
+        "2026-06-05": "09:30-16:30"
+      },
+      "access_zh": "捷運淡水信義線「台北101/世貿站」1 號出口；或板南線「市政府站」步行約 12-15 分鐘",
+      "focus_zh": "AI 機器人、科技應用體驗、電子紙創新",
+      "floors": [
+        {
+          "floor": "1F",
+          "zones": [
+            { "code": "A", "theme_zh": "AI 機器人區（服務型機器人、AI 視覺、無人系統）— 最適合拍照打卡", "key_exhibitors_zh": ["所羅門", "立端", "上銀", "聰泰", "佳能", "永彰", "機器人與邊緣 AI 主題館", "人機互動主題館"] },
+            { "code": "D(epaper)", "theme_zh": "電子紙產業專區", "key_exhibitors_zh": ["元太", "台灣夏普", "達擎", "PocketBook", "VUSION", "Pricer"] },
+            { "code": "D(tech)", "theme_zh": "科技應用暨體驗館（企業 AI、沉浸式體驗）", "key_exhibitors_zh": ["肯微", "德隆", "僑威", "貝瑞特"] }
+          ]
+        }
+      ]
+    }
+  ],
+  "transportation": {
+    "between_venues_zh": {
+      "twtc_to_nangang": [
+        {
+          "method": "板南線（建議）",
+          "steps_zh": "世貿一館 → 步行約 12-15 分鐘到「市政府站」→ 板南線往南港方向 → 「南港展覽館站」5 號出口",
+          "duration_min": 30
+        },
+        {
+          "method": "淡水信義線轉文湖線",
+          "steps_zh": "「台北101/世貿站」→ 淡水信義線 → 「大安站」轉文湖線 → 「南港展覽館站」",
+          "duration_min": 38,
+          "note_zh": "文湖線車廂小，展期人多時較擠"
+        }
+      ],
+      "warning_zh": "⚠️ 14:00-14:45 是兩館間交通壅塞高峰；6/5 南港 15:30 閉館，跨館移動建議在 12:30-13:00 完成（順便吃午餐避峰）"
+    },
+    "taxi_fallback_zh": "捷運故障時：世貿 → 南港計程車約 20-25 分鐘、NT$250-300"
+  },
+  "tickets": {
+    "public_day_only": "2026-06-05",
+    "options": [
+      {
+        "type": "業界人士登錄",
+        "type_en": "Industry professional registration",
+        "price": 0,
+        "valid_dates": "2026-06-02 ~ 2026-06-05",
+        "how_zh": "線上預先登錄已截止；可於展前一日（6/1）起至展期間到現場報到櫃台辦理，攜帶 2 張名片（科技／相關產業）",
+        "note_zh": "免費、全展期可入場，國內專業人士憑 QR code 直接掃描入場"
+      },
+      {
+        "type": "一般民眾票",
+        "type_en": "General public ticket",
+        "price": 200,
+        "concession_price": 100,
+        "valid_dates": "2026-06-05",
+        "how_zh": "TaiTIX 線上購票（https://taitix.com.tw/event/detail/100003/computex26）或現場購票（售票至 15:00）",
+        "restrictions_zh": ["僅 6/5 可入場", "未滿 18 歲不能入場", "優待票限 65 歲以上長者／身心障礙者及 1 名陪同者（現場購買）"],
+        "venue_access_warning_zh": "⚠️ 部分媒體報導民眾票僅能進世貿一館（南港為專業展館不開放），但官方售票頁與參觀資訊頁未明確寫此限制。要去南港的人請以官方最新公告或現場詢問為準；最保險是辦業界登錄。"
+      }
+    ]
+  }
+}
+```
+
+<!-- ===== data/tour-routes.json ===== -->
+```json
+{
+  "meta": {
+    "title": "COMPUTEX 2026 Official Guided Tour Routes",
+    "title_zh": "COMPUTEX 2026 官方導覽團路線",
+    "verified_at": "2026-06-01",
+    "source": "TCA official guided tour route PDFs (distributed by organizer)",
+    "note_zh": "官方導覽團由 TCA 規劃，可於官網報名（額滿為止）；以下路線也可自行依序走訪",
+    "signup_url": "https://www.computextaipei.com.tw/"
+  },
+  "twtc_hall1_routes": [
+    {
+      "id": "twtc-edge-ai",
+      "theme_zh": "Edge AI × 智慧終端",
+      "meeting_point_zh": "左側服務台",
+      "stops_zh": [
+        { "order": 1, "name": "機器人與邊緣 AI 主題館（Power by Intel）", "highlights_zh": ["邊緣 AI 情境沉浸式", "12 家夥伴聯合生態展出", "OpenVINO 驅動 AI 真實落地"] },
+        { "order": 2, "name": "融程 Winmate", "highlights_zh": ["強固型 GCS 無人機控制站", "AI Laptop 強固高效能運算", "Edge AI 行動終端三合一"] },
+        { "order": 3, "name": "立端 Lanner", "highlights_zh": ["全新 AstraEdge™ AI 平台", "語音指令控制機械手臂", "端對端 Agentic AI 完整示範"] },
+        { "order": 4, "name": "上銀 HIWIN", "highlights_zh": ["全球人形機器人百強入列", "雙臂八軸物流機器人展出", "人形機器人精密傳動核心"] }
+      ]
+    },
+    {
+      "id": "twtc-hci-ai",
+      "theme_zh": "人機互動 × AI 體驗（Human-Computer Interaction × AI Experience）",
+      "meeting_point_zh": "左側服務台",
+      "stops_zh": [
+        { "order": 1, "name": "人機互動主題館（HRIS Pavilion）", "highlights_zh": ["服務機器人", "RaaS 雲端平台", "零售對話式銷售系統"] },
+        { "order": 2, "name": "機器人與邊緣 AI 主題館", "highlights_zh": ["邊緣 AI 情境沉浸式體驗"] },
+        { "order": 3, "name": "所羅門 Solomon", "highlights_zh": ["VLA 人形機器人全球四強之一", "語音指令即時驅動機器人", "Super Vision 遠距 AI 視覺辨識"] },
+        { "order": 4, "name": "卡德爾 Qadir", "highlights_zh": ["台灣自製四足機器狗", "LiDAR 自主避障即時建圖", "5G 雲端遠端操控實演"] },
+        { "order": 5, "name": "聰泰 YUAN", "highlights_zh": ["全球最大影像採集模組廠", "NVIDIA 夥伴×三大 AI 應用", "Pandora AI Agent 自主決策"] },
+        { "order": 6, "name": "高柏 T-Global", "highlights_zh": ["AI 機器人核心散熱關鍵", "石墨烯 TIM 高效導熱方案"] }
+      ]
+    },
+    {
+      "id": "twtc-smart-power",
+      "theme_zh": "智慧電力 × 關鍵技術（Smart Power × Key Technologies）",
+      "meeting_point_zh": "左側服務台",
+      "stops_zh": [
+        { "order": 1, "name": "超能配電", "highlights_zh": ["無水管路零漏水冷卻", "輻射制冷高效散熱艙", "AI 動態溫濕智慧調控"] },
+        { "order": 2, "name": "高瑞電氣", "highlights_zh": ["HPC×資料中心全系列電源", "光伏儲能×AI 綠能雙驅動"] },
+        { "order": 3, "name": "恆顥", "highlights_zh": ["仁寶集團觸控面板子公司", "玻璃到 LCM 全垂直整合"] },
+        { "order": 4, "name": "肯微 Compuware", "highlights_zh": ["AI Rack 全方位電源解決", "全球唯一水冷 Power Shelf", "80 PLUS Ruby 最高能效認證"] },
+        { "order": 5, "name": "宇晨", "highlights_zh": ["全球領先液態金屬散熱", "首創不流動液態金屬霜", "AI 晶片伺服器散熱解方"] }
+      ]
+    },
+    {
+      "id": "twtc-robotics-mfg",
+      "theme_zh": "智慧機器人 × 製造應用（Intelligent Robotics × Manufacturing）",
+      "meeting_point_zh": "左側服務台",
+      "stops_zh": [
+        { "order": 1, "name": "機器人與邊緣 AI 主題館", "highlights_zh": ["OpenVINO 驅動 AI 真實落地"] },
+        { "order": 2, "name": "所羅門 Solomon", "highlights_zh": ["VLA 人形機器人全球四強之一"] },
+        { "order": 3, "name": "佳能 ABILITY", "highlights_zh": ["AI 視覺辨識邊緣運算整合", "商用機械手臂實機展示", "智慧停車×AI 場域管理"] },
+        { "order": 4, "name": "永彰 EVERBRITE", "highlights_zh": ["熱管理×智慧製造四大核心", "AI 伺服器電子散熱解決方案"] },
+        { "order": 5, "name": "上銀 HIWIN", "highlights_zh": ["全球人形機器人百強", "雙臂八軸物流機器人"] }
+      ]
+    },
+    {
+      "id": "twtc-ai-vision",
+      "theme_zh": "AI 視覺 × 感測應用",
+      "meeting_point_zh": "左側服務台",
+      "stops_zh": [
+        { "order": 1, "name": "聰泰 YUAN", "highlights_zh": ["全球最大影像採集模組廠", "Pandora AI Agent 自主決策"] },
+        { "order": 2, "name": "佳能 ABILITY", "highlights_zh": ["AI 視覺辨識邊緣運算整合"] },
+        { "order": 3, "name": "所羅門 Solomon", "highlights_zh": ["Super Vision 遠距 AI 視覺辨識"] },
+        { "order": 4, "name": "擷發 Microip", "highlights_zh": ["客製 ASIC 到 AI 視覺一站式", "無人機×車載毫秒級辨識", "CAPS 跨平台 AI 快速落地"] },
+        { "order": 5, "name": "歐特明 oToBrite", "highlights_zh": ["車規等級 Vision-AI 感知", "120dB HDR 全域同步成像", "即插即用 SLAM 建圖定位"] }
+      ]
+    },
+    {
+      "id": "twtc-epaper",
+      "theme_zh": "電子紙產業生態系",
+      "meeting_point_zh": "左側服務台",
+      "stops_zh": [
+        { "order": 1, "name": "元太 E Ink", "highlights_zh": ["全球電子紙產業領導廠", "斷電仍顯示雙穩態技術", "攜手 40 家夥伴一站採購"] },
+        { "order": 2, "name": "台灣夏普 SHARP", "highlights_zh": ["全球最大 A1 可撓式 ePoster", "靜態零耗電永續顯示"] },
+        { "order": 3, "name": "振曜 NTX", "highlights_zh": ["Wi-Fi/BLE 遠端 CMS 管理", "智慧零售永續數位看板"] },
+        { "order": 4, "name": "天鈺 Fitipower", "highlights_zh": ["電子紙驅動晶片一條龍", "DDIC×PMIC×AI IC 整合"] },
+        { "order": 5, "name": "普爾斯 Pricer", "highlights_zh": ["ESL 電子價簽全球創始者", "彩色價簽 10 年超長電池"] }
+      ]
+    }
+  ],
+  "nangang_routes": [
+    {
+      "id": "ng-ai-compute-storage-a",
+      "theme_zh": "AI 算力與高階儲存 (A)",
+      "venues_zh": "南港 2 館 4F → 南港 1 館 1F",
+      "meeting_point_zh": "南 2 館 4 樓 R 區入口",
+      "stops_zh": [
+        { "order": 1, "name": "BC Award 得獎展示區", "highlights_zh": ["COMPUTEX 官方獎項", "國際買主的最佳採購指標"] },
+        { "order": 2, "name": "創見 Transcend", "highlights_zh": ["自製最新世代 NAND、企業級 SSD"] },
+        { "order": 3, "name": "華擎 ASRock", "highlights_zh": ["新世代 CPU 主機板與水冷散熱", "伺服器、車用電子、物聯網"] },
+        { "order": 4, "name": "英業達 Inventec", "highlights_zh": ["雲端運算與物聯網整合應用"] },
+        { "order": 5, "name": "芝奇 G.SKILL", "highlights_zh": ["DDR5 記憶體世界速度紀錄", "AI 與資料中心方案"] },
+        { "order": 6, "name": "十銓 Team Group", "highlights_zh": ["超大容量 AI 工作站記憶體", "一鍵銷毀資料外接硬碟"] }
+      ]
+    },
+    {
+      "id": "ng-ai-compute-storage-b",
+      "theme_zh": "AI 算力與高階儲存 (B)",
+      "venues_zh": "南港 2 館 4F → 南港 1 館 1F",
+      "meeting_point_zh": "南 2 館 4 樓 R 區入口",
+      "stops_zh": [
+        { "order": 1, "name": "神準 Senao", "highlights_zh": ["無線網路、網路安全、資料中心交換器"] },
+        { "order": 2, "name": "中環 CMC", "highlights_zh": ["儲存媒體領導廠商"] },
+        { "order": 3, "name": "BC Award 得獎展示區", "highlights_zh": ["官方獎項得獎產品"] },
+        { "order": 4, "name": "神雲 MiTAC", "highlights_zh": ["AMD 頂規液冷 AI 伺服器整機方案", "整合算力、儲存與冷卻技術"] },
+        { "order": 5, "name": "廣穎 SP", "highlights_zh": ["記憶卡、隨身碟、SSD"] },
+        { "order": 6, "name": "宇瞻 Apacer", "highlights_zh": ["記憶體模組、工業用 SSD", "客製化儲存與物聯網整合"] }
+      ]
+    },
+    {
+      "id": "ng-datacenter-infra-b",
+      "theme_zh": "AI 資料中心與基礎建設 (B)",
+      "venues_zh": "南港 1 館 1F",
+      "meeting_point_zh": "南 1 館 1 樓 J 區入口",
+      "stops_zh": [
+        { "order": 1, "name": "光寶 LITEON", "highlights_zh": ["NVIDIA 合作的 AI 通訊網路方案", "電源、通訊、交通三領域同場"] },
+        { "order": 2, "name": "微星 MSI", "highlights_zh": ["顯示卡、主機板、伺服器、機器人"] },
+        { "order": 3, "name": "雙鴻 Auras", "highlights_zh": ["筆電散熱模組、伺服器散熱解決方案"] },
+        { "order": 4, "name": "維諦 Vertiv", "highlights_zh": ["UPS 電源、熱管理、IT 基礎架構設備", "資料中心與邊緣站點關鍵設施方案"] },
+        { "order": 5, "name": "勤誠 Chenbro", "highlights_zh": ["伺服器機殼、存儲機殼、機架整合方案"] },
+        { "order": 6, "name": "健策 Jentech", "highlights_zh": ["CPU/GPU 均熱片", "高精密沖壓與散熱元件"] }
+      ]
+    },
+    {
+      "id": "ng-edge-ai",
+      "theme_zh": "Edge AI 落地與應用",
+      "venues_zh": "南港 1 館 1F",
+      "meeting_point_zh": "南 1 館 1 樓 K 區入口",
+      "stops_zh": [
+        { "order": 1, "name": "威聯通 QNAP", "highlights_zh": ["NAS 儲存、網通設備", "企業邊緣運算與 AI 分析整合"] },
+        { "order": 2, "name": "宜鼎 Innodisk", "highlights_zh": ["全球工業存儲市佔第一", "企業自建 AI 助理解決方案"] },
+        { "order": 3, "name": "研華 Advantech", "highlights_zh": ["AI 機器人從感知到行動全流程", "跨產業機器人模組化開發平台"] },
+        { "order": 4, "name": "技嘉 GIGABYTE", "highlights_zh": ["主機板、顯示卡、伺服器、AI 運算設備"] },
+        { "order": 5, "name": "樺漢 Ennoconn", "highlights_zh": ["工業電腦、嵌入式主機板、AIoT 設備"] },
+        { "order": 6, "name": "研揚 AAEON", "highlights_zh": ["嵌入式主板、AI 邊緣電腦", "智慧製造、城市、零售 AIoT 整合"] }
+      ]
+    },
+    {
+      "id": "ng-ai-pc",
+      "theme_zh": "AI PC 生態系",
+      "venues_zh": "南港 1 館 4F",
+      "meeting_point_zh": "南 1 館 4 樓 L 區入口",
+      "stops_zh": [
+        { "order": 1, "name": "仁寶 COMPAL", "highlights_zh": ["筆電、雲端伺服器、車用電子"] },
+        { "order": 2, "name": "微星 MSI", "highlights_zh": ["電競、AI PC 至工業與車用全品類"] },
+        { "order": 3, "name": "威剛 ADATA", "highlights_zh": ["記憶體模組、SSD、工控儲存"] },
+        { "order": 4, "name": "技嘉 GIGABYTE", "highlights_zh": ["消費電腦與企業資料中心全品類方案"] },
+        { "order": 5, "name": "宏碁 Acer", "highlights_zh": ["筆電、桌機、雲端服務"] },
+        { "order": 6, "name": "RISC-V 主題館（台灣智慧物聯網產業協會）", "highlights_zh": ["RISC-V 開放架構、AIoT 晶片、嵌入式應用", "推動台灣產學研 RISC-V 生態系整合"] }
+      ]
+    },
+    {
+      "id": "ng-smart-mobility",
+      "theme_zh": "次世代智慧移動",
+      "venues_zh": "南港 1 館 4F",
+      "meeting_point_zh": "南 1 館 4 樓 L 區入口",
+      "stops_zh": [
+        { "order": 1, "name": "義隆 ELAN", "highlights_zh": ["Edge AI & 人機介面解決方案", "智慧交通、ADAS、無人機"] },
+        { "order": 2, "name": "和碩 Pegatron", "highlights_zh": ["ODM 與 DMS 設計整合製造服務"] },
+        { "order": 3, "name": "貿聯 BizLink", "highlights_zh": ["連接線、線束、網路連接解決方案"] },
+        { "order": 4, "name": "台灣先進車用主題館 TADA", "highlights_zh": ["車用電子、電動車、智慧車供應鏈"] },
+        { "order": 5, "name": "中興保全 SECOM", "highlights_zh": ["AI 機器人安防場域應用", "保全系統、智慧家庭"] },
+        { "order": 6, "name": "馳諾瓦 Zerova", "highlights_zh": ["各規格電動車充電設備", "智慧充電與能源管理"] }
+      ]
+    }
+  ]
+}
+```

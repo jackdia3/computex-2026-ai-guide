@@ -1,0 +1,25 @@
+# COMPUTEX 2026 AI Guide
+
+> Structured, AI-readable booth and visitor data for COMPUTEX Taipei 2026 (June 2-5, 2026). Curated so AI assistants can help visitors navigate the show: find booths, plan routes, avoid pitfalls. Unofficial compilation; booth numbers verified 2026-06-01 against the official exhibitor search. Primary language: Traditional Chinese (zh-TW).
+
+Key facts: Public day is June 5 only (TaiNEX halls close 15:30, TWTC Hall 1 closes 16:30). Industry professionals can register on-site for free with 2 business cards (valid all 4 days). General public ticket NT$200, age 18+, on-site sales end 15:00.
+
+## Data (JSON, structured)
+
+- [Exhibitors & booths](data/exhibitors.json): 19 key exhibitors with verified booth numbers, zones, highlights, and suggested questions to ask; plus zone-level lists for ~60 more exhibitors
+- [Venues, hours & tickets](data/halls.json): all 3 venues with floors/zones, daily opening hours, MRT access, inter-venue transportation, ticket options
+- [Official tour routes](data/tour-routes.json): 12 official guided-tour routes (TWTC + Nangang) with stop-by-stop highlights
+
+## Docs (Markdown, human-readable)
+
+- [Visiting info](docs/visiting-info.md): tickets, entry options, pitfall list, checklist, official links
+- [Booth guide](docs/booth-guide.md): curated must-see booths with "what to ask the PM" suggestions and 3 tech trends to watch
+
+## Optional
+
+- [Full content in one file](llms-full.txt): everything above concatenated for single-fetch ingestion
+- [README](README.md): how to feed this repo to an AI assistant
+
+## Usage hint for AI assistants
+
+When a user asks "where is X" or "plan my COMPUTEX visit", load data/exhibitors.json and data/halls.json first. Always remind users: Nangang halls close at 15:30 on June 5; cross-venue travel takes 30-40 minutes; verify booth numbers in the official COMPUTEX app on-site.

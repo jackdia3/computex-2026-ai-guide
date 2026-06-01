@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "title": "COMPUTEX 2026 Official Guided Tour Routes",
+    "title_zh": "COMPUTEX 2026 官方導覽團路線",
+    "verified_at": "2026-06-01",
+    "source": "TCA official guided tour route PDFs (distributed by organizer)",
+    "note_zh": "官方導覽團由 TCA 規劃，可於官網報名（額滿為止）；以下路線也可自行依序走訪",
+    "signup_url": "https://www.computextaipei.com.tw/"
+  },
+  "twtc_hall1_routes": [
+    {
+      "id": "twtc-edge-ai",
+      "theme_zh": "Edge AI × 智慧終端",
+      "meeting_point_zh": "左側服務台",
+      "stops_zh": [
+        { "order": 1, "name": "機器人與邊緣 AI 主題館（Power by Intel）", "highlights_zh": ["邊緣 AI 情境沉浸式", "12 家夥伴聯合生態展出", "OpenVINO 驅動 AI 真實落地"] },
+        { "order": 2, "name": "融程 Winmate", "highlights_zh": ["強固型 GCS 無人機控制站", "AI Laptop 強固高效能運算", "Edge AI 行動終端三合一"] },
+        { "order": 3, "name": "立端 Lanner", "highlights_zh": ["全新 AstraEdge™ AI 平台", "語音指令控制機械手臂", "端對端 Agentic AI 完整示範"] },
+        { "order": 4, "name": "上銀 HIWIN", "highlights_zh": ["全球人形機器人百強入列", "雙臂八軸物流機器人展出", "人形機器人精密傳動核心"] }
+      ]
+    },
+    {
+      "id": "twtc-hci-ai",
+      "theme_zh": "人機互動 × AI 體驗（Human-Computer Interaction × AI Experience）",
+      "meeting_point_zh": "左側服務台",
+      "stops_zh": [
+        { "order": 1, "name": "人機互動主題館（HRIS Pavilion）", "highlights_zh": ["服務機器人", "RaaS 雲端平台", "零售對話式銷售系統"] },
+        { "order": 2, "name": "機器人與邊緣 AI 主題館", "highlights_zh": ["邊緣 AI 情境沉浸式體驗"] },
+        { "order": 3, "name": "所羅門 Solomon", "highlights_zh": ["VLA 人形機器人全球四強之一", "語音指令即時驅動機器人", "Super Vision 遠距 AI 視覺辨識"] },
+        { "order": 4, "name": "卡德爾 Qadir", "highlights_zh": ["台灣自製四足機器狗", "LiDAR 自主避障即時建圖", "5G 雲端遠端操控實演"] },
+        { "order": 5, "name": "聰泰 YUAN", "highlights_zh": ["全球最大影像採集模組廠", "NVIDIA 夥伴×三大 AI 應用", "Pandora AI Agent 自主決策"] },
+        { "order": 6, "name": "高柏 T-Global", "highlights_zh": ["AI 機器人核心散熱關鍵", "石墨烯 TIM 高效導熱方案"] }
+      ]
+    },
+    {
+      "id": "twtc-smart-power",
+      "theme_zh": "智慧電力 × 關鍵技術（Smart Power × Key Technologies）",
+      "meeting_point_zh": "左側服務台",
+      "stops_zh": [
+        { "order": 1, "name": "超能配電", "highlights_zh": ["無水管路零漏水冷卻", "輻射制冷高效散熱艙", "AI 動態溫濕智慧調控"] },
+        { "order": 2, "name": "高瑞電氣", "highlights_zh": ["HPC×資料中心全系列電源", "光伏儲能×AI 綠能雙驅動"] },
+        { "order": 3, "name": "恆顥", "highlights_zh": ["仁寶集團觸控面板子公司", "玻璃到 LCM 全垂直整合"] },
+        { "order": 4, "name": "肯微 Compuware", "highlights_zh": ["AI Rack 全方位電源解決", "全球唯一水冷 Power Shelf", "80 PLUS Ruby 最高能效認證"] },
+        { "order": 5, "name": "宇晨", "highlights_zh": ["全球領先液態金屬散熱", "首創不流動液態金屬霜", "AI 晶片伺服器散熱解方"] }
+      ]
+    },
+    {
+      "id": "twtc-robotics-mfg",
+      "theme_zh": "智慧機器人 × 製造應用（Intelligent Robotics × Manufacturing）",
+      "meeting_point_zh": "左側服務台",
+      "stops_zh": [
+        { "order": 1, "name": "機器人與邊緣 AI 主題館", "highlights_zh": ["OpenVINO 驅動 AI 真實落地"] },
+        { "order": 2, "name": "所羅門 Solomon", "highlights_zh": ["VLA 人形機器人全球四強之一"] },
+        { "order": 3, "name": "佳能 ABILITY", "highlights_zh": ["AI 視覺辨識邊緣運算整合", "商用機械手臂實機展示", "智慧停車×AI 場域管理"] },
+        { "order": 4, "name": "永彰 EVERBRITE", "highlights_zh": ["熱管理×智慧製造四大核心", "AI 伺服器電子散熱解決方案"] },
+        { "order": 5, "name": "上銀 HIWIN", "highlights_zh": ["全球人形機器人百強", "雙臂八軸物流機器人"] }
+      ]
+    },
+    {
+      "id": "twtc-ai-vision",
+      "theme_zh": "AI 視覺 × 感測應用",
+      "meeting_point_zh": "左側服務台",
+      "stops_zh": [
+        { "order": 1, "name": "聰泰 YUAN", "highlights_zh": ["全球最大影像採集模組廠", "Pandora AI Agent 自主決策"] },
+        { "order": 2, "name": "佳能 ABILITY", "highlights_zh": ["AI 視覺辨識邊緣運算整合"] },
+        { "order": 3, "name": "所羅門 Solomon", "highlights_zh": ["Super Vision 遠距 AI 視覺辨識"] },
+        { "order": 4, "name": "擷發 Microip", "highlights_zh": ["客製 ASIC 到 AI 視覺一站式", "無人機×車載毫秒級辨識", "CAPS 跨平台 AI 快速落地"] },
+        { "order": 5, "name": "歐特明 oToBrite", "highlights_zh": ["車規等級 Vision-AI 感知", "120dB HDR 全域同步成像", "即插即用 SLAM 建圖定位"] }
+      ]
+    },
+    {
+      "id": "twtc-epaper",
+      "theme_zh": "電子紙產業生態系",
+      "meeting_point_zh": "左側服務台",
+      "stops_zh": [
+        { "order": 1, "name": "元太 E Ink", "highlights_zh": ["全球電子紙產業領導廠", "斷電仍顯示雙穩態技術", "攜手 40 家夥伴一站採購"] },
+        { "order": 2, "name": "台灣夏普 SHARP", "highlights_zh": ["全球最大 A1 可撓式 ePoster", "靜態零耗電永續顯示"] },
+        { "order": 3, "name": "振曜 NTX", "highlights_zh": ["Wi-Fi/BLE 遠端 CMS 管理", "智慧零售永續數位看板"] },
+        { "order": 4, "name": "天鈺 Fitipower", "highlights_zh": ["電子紙驅動晶片一條龍", "DDIC×PMIC×AI IC 整合"] },
+        { "order": 5, "name": "普爾斯 Pricer", "highlights_zh": ["ESL 電子價簽全球創始者", "彩色價簽 10 年超長電池"] }
+      ]
+    }
+  ],
+  "nangang_routes": [
+    {
+      "id": "ng-ai-compute-storage-a",
+      "theme_zh": "AI 算力與高階儲存 (A)",
+      "venues_zh": "南港 2 館 4F → 南港 1 館 1F",
+      "meeting_point_zh": "南 2 館 4 樓 R 區入口",
+      "stops_zh": [
+        { "order": 1, "name": "BC Award 得獎展示區", "highlights_zh": ["COMPUTEX 官方獎項", "國際買主的最佳採購指標"] },
+        { "order": 2, "name": "創見 Transcend", "highlights_zh": ["自製最新世代 NAND、企業級 SSD"] },
+        { "order": 3, "name": "華擎 ASRock", "highlights_zh": ["新世代 CPU 主機板與水冷散熱", "伺服器、車用電子、物聯網"] },
+        { "order": 4, "name": "英業達 Inventec", "highlights_zh": ["雲端運算與物聯網整合應用"] },
+        { "order": 5, "name": "芝奇 G.SKILL", "highlights_zh": ["DDR5 記憶體世界速度紀錄", "AI 與資料中心方案"] },
+        { "order": 6, "name": "十銓 Team Group", "highlights_zh": ["超大容量 AI 工作站記憶體", "一鍵銷毀資料外接硬碟"] }
+      ]
+    },
+    {
+      "id": "ng-ai-compute-storage-b",
+      "theme_zh": "AI 算力與高階儲存 (B)",
+      "venues_zh": "南港 2 館 4F → 南港 1 館 1F",
+      "meeting_point_zh": "南 2 館 4 樓 R 區入口",
+      "stops_zh": [
+        { "order": 1, "name": "神準 Senao", "highlights_zh": ["無線網路、網路安全、資料中心交換器"] },
+        { "order": 2, "name": "中環 CMC", "highlights_zh": ["儲存媒體領導廠商"] },
+        { "order": 3, "name": "BC Award 得獎展示區", "highlights_zh": ["官方獎項得獎產品"] },
+        { "order": 4, "name": "神雲 MiTAC", "highlights_zh": ["AMD 頂規液冷 AI 伺服器整機方案", "整合算力、儲存與冷卻技術"] },
+        { "order": 5, "name": "廣穎 SP", "highlights_zh": ["記憶卡、隨身碟、SSD"] },
+        { "order": 6, "name": "宇瞻 Apacer", "highlights_zh": ["記憶體模組、工業用 SSD", "客製化儲存與物聯網整合"] }
+      ]
+    },
+    {
+      "id": "ng-datacenter-infra-b",
+      "theme_zh": "AI 資料中心與基礎建設 (B)",
+      "venues_zh": "南港 1 館 1F",
+      "meeting_point_zh": "南 1 館 1 樓 J 區入口",
+      "stops_zh": [
+        { "order": 1, "name": "光寶 LITEON", "highlights_zh": ["NVIDIA 合作的 AI 通訊網路方案", "電源、通訊、交通三領域同場"] },
+        { "order": 2, "name": "微星 MSI", "highlights_zh": ["顯示卡、主機板、伺服器、機器人"] },
+        { "order": 3, "name": "雙鴻 Auras", "highlights_zh": ["筆電散熱模組、伺服器散熱解決方案"] },
+        { "order": 4, "name": "維諦 Vertiv", "highlights_zh": ["UPS 電源、熱管理、IT 基礎架構設備", "資料中心與邊緣站點關鍵設施方案"] },
+        { "order": 5, "name": "勤誠 Chenbro", "highlights_zh": ["伺服器機殼、存儲機殼、機架整合方案"] },
+        { "order": 6, "name": "健策 Jentech", "highlights_zh": ["CPU/GPU 均熱片", "高精密沖壓與散熱元件"] }
+      ]
+    },
+    {
+      "id": "ng-edge-ai",
+      "theme_zh": "Edge AI 落地與應用",
+      "venues_zh": "南港 1 館 1F",
+      "meeting_point_zh": "南 1 館 1 樓 K 區入口",
+      "stops_zh": [
+        { "order": 1, "name": "威聯通 QNAP", "highlights_zh": ["NAS 儲存、網通設備", "企業邊緣運算與 AI 分析整合"] },
+        { "order": 2, "name": "宜鼎 Innodisk", "highlights_zh": ["全球工業存儲市佔第一", "企業自建 AI 助理解決方案"] },
+        { "order": 3, "name": "研華 Advantech", "highlights_zh": ["AI 機器人從感知到行動全流程", "跨產業機器人模組化開發平台"] },
+        { "order": 4, "name": "技嘉 GIGABYTE", "highlights_zh": ["主機板、顯示卡、伺服器、AI 運算設備"] },
+        { "order": 5, "name": "樺漢 Ennoconn", "highlights_zh": ["工業電腦、嵌入式主機板、AIoT 設備"] },
+        { "order": 6, "name": "研揚 AAEON", "highlights_zh": ["嵌入式主板、AI 邊緣電腦", "智慧製造、城市、零售 AIoT 整合"] }
+      ]
+    },
+    {
+      "id": "ng-ai-pc",
+      "theme_zh": "AI PC 生態系",
+      "venues_zh": "南港 1 館 4F",
+      "meeting_point_zh": "南 1 館 4 樓 L 區入口",
+      "stops_zh": [
+        { "order": 1, "name": "仁寶 COMPAL", "highlights_zh": ["筆電、雲端伺服器、車用電子"] },
+        { "order": 2, "name": "微星 MSI", "highlights_zh": ["電競、AI PC 至工業與車用全品類"] },
+        { "order": 3, "name": "威剛 ADATA", "highlights_zh": ["記憶體模組、SSD、工控儲存"] },
+        { "order": 4, "name": "技嘉 GIGABYTE", "highlights_zh": ["消費電腦與企業資料中心全品類方案"] },
+        { "order": 5, "name": "宏碁 Acer", "highlights_zh": ["筆電、桌機、雲端服務"] },
+        { "order": 6, "name": "RISC-V 主題館（台灣智慧物聯網產業協會）", "highlights_zh": ["RISC-V 開放架構、AIoT 晶片、嵌入式應用", "推動台灣產學研 RISC-V 生態系整合"] }
+      ]
+    },
+    {
+      "id": "ng-smart-mobility",
+      "theme_zh": "次世代智慧移動",
+      "venues_zh": "南港 1 館 4F",
+      "meeting_point_zh": "南 1 館 4 樓 L 區入口",
+      "stops_zh": [
+        { "order": 1, "name": "義隆 ELAN", "highlights_zh": ["Edge AI & 人機介面解決方案", "智慧交通、ADAS、無人機"] },
+        { "order": 2, "name": "和碩 Pegatron", "highlights_zh": ["ODM 與 DMS 設計整合製造服務"] },
+        { "order": 3, "name": "貿聯 BizLink", "highlights_zh": ["連接線、線束、網路連接解決方案"] },
+        { "order": 4, "name": "台灣先進車用主題館 TADA", "highlights_zh": ["車用電子、電動車、智慧車供應鏈"] },
+        { "order": 5, "name": "中興保全 SECOM", "highlights_zh": ["AI 機器人安防場域應用", "保全系統、智慧家庭"] },
+        { "order": 6, "name": "馳諾瓦 Zerova", "highlights_zh": ["各規格電動車充電設備", "智慧充電與能源管理"] }
+      ]
+    }
+  ]
+}
