@@ -1,5 +1,7 @@
 # COMPUTEX 2026 AI Guide
 
+> ⚠️ **非官方專案 / Unofficial** — 本專案與 COMPUTEX、外貿協會（TAITRA）、台北市電腦公會（TCA）無任何關係，為個人觀展者整理的公開資訊彙整。
+>
 > 給 AI 助理讀的 COMPUTEX 2026 攤位 / 觀展結構化資料 — 讓任何 AI（ChatGPT / Claude / Gemini）能直接幫你規劃逛展路線、找攤位、避坑。
 >
 > Structured COMPUTEX Taipei 2026 booth & visitor data, optimized for AI assistants.
@@ -13,19 +15,18 @@
 
 ### 方式 1：貼網址給 AI（最簡單）
 
-把這個 repo 的 raw 網址貼給任何能上網的 AI：
+把這段貼給任何能上網的 AI（ChatGPT / Claude / Gemini / Perplexity）：
 
 ```
-請讀取 https://raw.githubusercontent.com/jackdia3/computex-2026-ai-guide/main/llms-full.txt
+請讀取 https://jackdia3.github.io/computex-2026-ai-guide/llms-full.txt
 然後幫我規劃 6/5 COMPUTEX 行程：我想看 AI 伺服器跟機器人，下午 3 點要離開。
 ```
 
-### 方式 2：下載 JSON 餵給 AI
+> 備用網址（若上面打不開）：`https://raw.githubusercontent.com/jackdia3/computex-2026-ai-guide/main/llms-full.txt`
 
-```
-請讀取 https://raw.githubusercontent.com/jackdia3/computex-2026-ai-guide/main/data/exhibitors.json
-我現在在世貿一館門口，立端的攤位怎麼走？
-```
+### 方式 2：複製內容貼給 AI（AI 不能上網時用）
+
+開啟 [llms-full.txt](https://jackdia3.github.io/computex-2026-ai-guide/llms-full.txt) → 全選複製 → 貼到 AI 對話框 → 接著問你的行程問題。內容約 800 行，多數 AI 都吃得下。
 
 ### 方式 3：人類直接看
 
@@ -60,10 +61,15 @@ computex-2026-ai-guide/
 
 ## 📌 資料來源與授權
 
-- **資料來源**：COMPUTEX 官方網站、官方參展商查詢系統、官方攻略手冊、TCA 官方導覽團路線（皆為公開資料，逐筆引用）
+- **資料來源**：COMPUTEX 官方網站、官方參展商查詢系統、官方攻略手冊、TCA 官方導覽團路線（皆為公開可取得之資訊）
+- **資料性質**：本 repo 僅彙整**事實性資訊**（廠商名稱、攤位號碼、展區位置、開放時間）並附上整理者自行撰寫的觀展建議；不包含官方文件之圖片、版面或完整文件重製
 - **驗證方式**：攤位號於 2026-06-01 對官方參展商查詢逐筆比對
-- **免責**：非官方專案，與 COMPUTEX / TAITRA / TCA 無關。現場請以官方 APP 與最新公告為準
-- **授權**：整理內容採 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh-hant)；原始展會資訊版權屬主辦單位
+- **免責**：非官方專案，與 COMPUTEX / TAITRA / TCA 無關。現場請以官方 APP 與最新公告為準；本資料若有錯誤，整理者不負任何責任
+- **授權**：整理內容採 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh-hant)；展會相關名稱與原始資訊之權利屬各權利人所有
+
+## 🛡️ 權利人聲明（Takedown）
+
+若 COMPUTEX 主辦單位（TAITRA / TCA）或任何參展廠商認為本 repo 內容不妥，請開 [Issue](../../issues) 或透過 GitHub 聯絡整理者，**將於收到通知後 48 小時內配合移除或修改**。本專案目的為協助觀展者並推廣展會，無任何商業用途。
 
 ## 🙋 維護
 
