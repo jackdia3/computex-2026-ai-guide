@@ -1,4 +1,5 @@
-# 完整逐字稿不公開（版權考量，per 2026-06-03 拍板：摘要公開、逐字稿留本地）
+# 完整逐字稿不放本 repo（版權考量；逐字稿工作區在私人資料庫）
+# 防護：就算誤放 raw/clean 也不會進 git
 transcripts/raw/
 transcripts/clean/
 
