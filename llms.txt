@@ -9,12 +9,21 @@ Key facts: Public day is June 5 only (TaiNEX halls close 15:30, TWTC Hall 1 clos
 - [Exhibitors & booths](data/exhibitors.json): 19 key exhibitors with verified booth numbers, zones, highlights, and suggested questions to ask; plus zone-level lists for ~60 more exhibitors, Best Choice Award 2026 winners, and major show announcements (June 1-3)
 - [Venues, hours & tickets](data/halls.json): all 3 venues with floors/zones, daily opening hours, MRT access, inter-venue transportation, ticket options
 - [Official tour routes](data/tour-routes.json): 12 official guided-tour routes (TWTC + Nangang) with stop-by-stop highlights
+- [Video index](data/videos.json): 140 videos (keynotes + official channel) with transcript/summary status
 
 ## Docs (Markdown, human-readable)
 
 - [Visiting info](docs/visiting-info.md): tickets, entry options, pitfall list, checklist, official links
 - [Booth guide](docs/booth-guide.md): curated must-see booths with "what to ask the PM" suggestions, Best Choice Award 2026 winners by booth, major show announcements (June 1-3), and 3 tech trends to watch
 - [COMPUTEX Online guide](docs/computex-online.md): how to watch Technology Unboxing, COMPUTOUR booth tours, and Forum replays online for free (official YouTube, no registration, available after the show)
+- [Video summaries](docs/video-summaries.md): AI-generated summaries of 81 videos — NVIDIA Jensen Huang keynote (timestamped, 20 announcements), Intel keynote, pre-show forum, COMPUTOUR booth tours, BC Award product videos
+
+## Video summaries (high information density — read these to answer "what was announced")
+
+- [NVIDIA GTC Taipei keynote summary](transcripts/summaries/keynote-nvidia.md): Vera Rubin full production, RTX Spark (N1X chip with MediaTek), Jetson Thor, Cosmos 3, DSX AI factory, with timestamps and booth cross-references
+- [Intel keynote summary](transcripts/summaries/keynote-intel.md): 18A process, Core Ultra Series 3, Xeon 6 Plus (288 E-cores), Perplexity hybrid inference, Foxconn rack-scale collaboration
+- [Pre-show Forum summary](transcripts/summaries/forum-preshow.md): "The AI Era" multi-speaker industry panel
+- [COMPUTOUR booth tours](transcripts/summaries/computour.md) / [BC Award product videos](transcripts/summaries/bc-award-videos.md) / [Technology Unboxing](transcripts/summaries/unboxing.md) / [Featured Products](transcripts/summaries/featured-products.md)
 
 ## Optional
 

@@ -46,11 +46,16 @@ computex-2026-ai-guide/
 ├── data/
 │   ├── exhibitors.json   ← 19 家精選攤位（號碼已驗證）+ 60+ 家 zone 級資料
 │   ├── halls.json        ← 三館樓層展區 / 開放時間 / 交通 / 票務
-│   └── tour-routes.json  ← 官方導覽團 12 條路線
+│   ├── tour-routes.json  ← 官方導覽團 12 條路線
+│   └── videos.json       ← 140 支影片索引（keynote + 官方頻道，含摘要狀態）
 ├── docs/
 │   ├── visiting-info.md  ← 觀展資訊（人類可讀版）
 │   ├── booth-guide.md    ← 必看攤位導覽 + BC Award 得獎攤位 + 展期發表（人類可讀版）
-│   └── computex-online.md ← COMPUTEX Online 線上平台指南（不能到場 / 展後回看）
+│   ├── computex-online.md ← COMPUTEX Online 線上平台指南（不能到場 / 展後回看）
+│   └── video-summaries.md ← 影音內容重點整理（81 支影片 AI 摘要導覽）
+├── transcripts/
+│   └── summaries/        ← Keynote / COMPUTOUR / 開箱影片摘要（黃仁勳 keynote 含 20 發表時間戳）
+├── scripts/              ← 影片字幕 pipeline（yt-dlp 抓字幕 → 清洗 → 索引，可增量重跑）
 ├── print/
 │   ├── cheatsheet-a4.pdf     ← 一頁攻略印刷版（A4 雙面）
 │   └── cheatsheet-source.html ← 印刷版原始檔（可自行修改重印）
@@ -68,6 +73,7 @@ computex-2026-ai-guide/
 | 🚀 InnoVEX | 新創展區（近 500 家、22 國）開放至 6/5；Pitch 頒獎典禮 6/4 已辦完 |
 | 🏆 BC Award | 得獎名單 6/2 公布（NVIDIA 年度大獎 / ASUS 10 獎）；南港 2 館 4F R 區入口左側展示區一站看完 |
 | 📺 不能到場 | [COMPUTEX Online](docs/computex-online.md)：官方 YouTube 免費看 COMPUTOUR 逛展 / 開箱節目 / 演講回放，展後仍可看 |
+| 🎬 沒空看影片 | [影音重點整理](docs/video-summaries.md)：黃仁勳 2hr keynote → 20 個發表時間戳摘要；81 支影片 AI 整理 |
 | 交通 | 兩館之間捷運約 30-40 分鐘；14:00-14:45 是壅塞高峰（整理者經驗估計） |
 
 ## 📌 資料來源與授權

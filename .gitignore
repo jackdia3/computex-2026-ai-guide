@@ -1,0 +1,15 @@
+# 完整逐字稿不公開（版權考量，per 2026-06-03 拍板：摘要公開、逐字稿留本地）
+transcripts/raw/
+transcripts/clean/
+
+# claude -p headless placeholder 垃圾防護
+.env*
+package.json
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+bunfig.toml
+.npmrc
+.yarnrc*
+.gitmodules
+node_modules/
