@@ -1,6 +1,6 @@
 # COMPUTEX 2026 觀展資訊（票務 / 入場 / 避坑）
 
-> 資料驗證日：2026-06-01。出發前以[官方參觀資訊](https://www.computextaipei.com.tw/zh-tw/menu/49C82382AF144873D0636733C6861689/info.html)最新公告為準。
+> 資料驗證日：2026-06-01（2026-06-03 增補線上平台資訊）。出發前以[官方參觀資訊](https://www.computextaipei.com.tw/zh-tw/menu/49C82382AF144873D0636733C6861689/info.html)最新公告為準。
 
 ## 基本資料
 
@@ -40,7 +40,7 @@
 | 1 | 南港 15:30 就關 | 想看 AI 伺服器 / 機房設施的，南港排上午或一早 |
 | 2 | 11:00–13:00 人潮最高峰 | 開門 09:30 就進場，先衝人氣攤位 |
 | 3 | 14:00–14:45 兩館之間交通壅塞 | 跨館移動安排在 12:30–13:00（順便吃午餐避峰） |
-| 4 | Keynote 都結束了（6/1–6/2 已過） | 6/5 重心是逛攤 + 互動 demo，不要期待演講 |
+| 4 | Keynote 都結束了（6/1–6/2 已過） | 6/5 重心是逛攤 + 互動 demo；想看演講上[官方 YouTube](https://www.youtube.com/@COMPUTEXTAIPEIshow) 回放（詳見[線上平台指南](computex-online.md)） |
 | 5 | InnoVEX 舞台活動已過 | 新創展區（南港 2 館 4F S 區，近 500 家新創）**開放至 6/5 可逛**；但 Pitch 頒獎典禮 6/4 已辦完，別期待競賽節目 |
 | 6 | 熱門攤位排隊 15 分鐘以上 | 直接跳過先逛別攤；時程比單一攤位重要 |
 | 7 | 資訊過載 + 腳力崩潰 | 帶水 + 行動電源；累了找休息區 |
@@ -61,4 +61,11 @@
 | https://www.computextaipei.com.tw/zh-tw/menu/49C82382AF144873D0636733C6861689/info.html | 參觀資訊 |
 | https://taitix.com.tw/event/detail/100003/computex26 | TaiTIX 購票 |
 | https://www.computextaipei.com.tw/en/exhibitor/index.html | 參展商 / 攤位查詢 |
+| https://www.youtube.com/@COMPUTEXTAIPEIshow | 官方 YouTube（COMPUTOUR 線上逛展 / 開箱節目 / 演講回放） |
+| https://www.computex.biz/ | 展商產品平台（Featured Products / 廠商聯絡） |
 | 官方 APP | App Store / Google Play 搜「COMPUTEX」 |
+
+## 不能到現場？線上也能逛
+
+COMPUTEX Online（6/2 起）：Technology Unboxing 開箱節目、COMPUTOUR 攤位直擊、Forum 演講回放，全部在官方 YouTube **免費免註冊**，展後仍可回看。
+完整說明 → [COMPUTEX Online 線上平台指南](computex-online.md)

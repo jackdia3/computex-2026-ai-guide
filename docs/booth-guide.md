@@ -40,6 +40,38 @@
 > 2. 如果 PM 只能回行銷話術、給不出實測數字 → 標「待查」，不用在現場下結論。
 > 3. 大眾日 PM 已經累了 — 問題精簡，一次問一兩個就好。
 
+## 🏆 Best Choice Award 2026 得獎產品 — 哪攤看得到
+
+> 6/2 公布的年度得獎名單，最快懶人包：先去南港 2 館 4F **BC Award 得獎展示區**（R 區入口左側）一站掃完，再挑想深入問的原廠攤。
+
+| 得獎 | 產品 | 哪裡看 / 可以問什麼 |
+|---|---|---|
+| 年度大獎 + Golden + 永續獎 | **NVIDIA Vera Rubin NVL72**（72 GPU + 36 CPU 液冷機櫃） | 南港 1 館 4F 鴻海 / 仁寶等 ODM 攤看液冷機架；BC Award 展示區看官方得獎版。問：「這櫃的供電、散熱、維修誰負責？」 |
+| Golden Award | **NVIDIA Jetson Thor**（機器人運算平台） | 世貿一館機器人區各攤，研華等夥伴可問。問：「推論跑在 Thor 還是雲端？失敗怎麼復原？」 |
+| Golden Award | **ROG G1000 Edition 20** 電競桌機 | 南港 1 館 4F ASUS（AI PC 生態系區）。問：「本機 AI / 遊戲負載同時跑，功耗和噪音怎麼控？」 |
+| 永續獎 | **ASUS ExpertBook Ultra** | 同上。問：「永續設計是材料、維修性，還是電池壽命？」 |
+| 類別獎（AI Computing） | **ASUS Ascent GX10** | 同上。問：「這台適合本機模型開發，還是偏展示型 workstation？」 |
+| 類別獎（Gaming）×3 | **ROG Zephyrus Duo (2026)** / **ROG Flow Z13** / **ROG Rapture GT-BN98 Pro** | 同上。問：「DLSS 4.5 / NPU / 網通加速，現場哪個 demo 看得到？」 |
+| 類別獎（Computer & System）×3 | **ASUS Zenbook DUO** / **ProArt PX13** / **ROG Thor 3000W** 電源 | 同上。問：「雙螢幕工作流、創作者 AI、3000W 電源各自解什麼痛點？」 |
+| 類別獎 | **GIGABYTE X870E AORUS XTREME X3D AI TOP** 主機板（同場發表 40 週年限定版） | 南港 1 館 1F **K0802** 技嘉攤。問：「AI TOP 對一般玩家是調校工具，還是真的能省時間？」 |
+| 類別獎 | **MSI MPG Ai TS-Series** 電源 | 南港 1 館 1F **J0605a** 微星攤。問：「AI 電源偵測能提前抓到哪些故障？」 |
+| 類別獎（車用） | **NVIDIA Alpamayo** 自駕推理模型 | 南港 1 館 4F 智慧移動區。問：「模型展示是感知、規劃，還是純推論 benchmark？」 |
+| 類別獎（醫療，三連霸） | **Wincomm WMP-2xU** 醫療工作站 | 用官方 APP 查 Wincomm 攤位。問：「醫療場域最難的是效能、認證，還是長期供貨？」 |
+
+## 📰 展期重大發表（6/1–6/3）— 大眾日現場還能看什麼
+
+| 發表 / 觀察 | 現場看哪裡 | 可以問什麼 |
+|---|---|---|
+| **NVIDIA Vera Rubin NVL72 全面量產**（GTC Taipei keynote 6/1） | 鴻海、仁寶、神雲等 ODM 攤的液冷機櫃就是這條生態鏈 | 「這是展示櫃還是量產配置？維修時要停整櫃還是可抽換？」 |
+| **RTX Spark**：NVIDIA 與聯發科合作的 Windows PC 晶片，Blackwell GPU + Grace CPU | 聯發科攤（南港 1 館 4F）可問；AI PC 區留意合作展示 | 「這會先進筆電、迷你 PC，還是開發板？本機模型能跑到什麼尺寸？」 |
+| **Jetson Thor** 機器人平台（約 2070 FP4 TFLOPS） | 世貿一館機器人區夥伴攤 | 「機器人 demo 的瓶頸是算力、感測器，還是軟體整合？」 |
+| **DLSS 4.5** 發表 | ASUS / MSI / GIGABYTE 電競攤 | 「現場 demo 是實機跑還是影片？開關 DLSS 後延遲差多少？」 |
+| **NVIDIA Constellation**：北投士林科技園區新總部，約 4 公頃、4000 員工 | 這不是展場產品，但會影響台灣 AI 生態敘事 | 「台灣團隊會做研發、驗證，還是主要做夥伴支援？」 |
+| **Intel Core Ultra Series 3 + Perplexity 混合推論展示**（keynote 6/2） | Intel / AI PC 相關攤位 | 「哪些任務留本地、哪些丟雲端？斷網時功能剩多少？」 |
+| **AMD Ryzen AI Halo mini PC** | AMD 生態與迷你 PC 相關攤位 | 「NPU、iGPU、CPU 各跑什麼？本機 AI 跑久了散熱怎麼辦？」 |
+| **液冷是今年 ODM 標配**：仁寶「The Engine of Intelligence」、鴻海液冷機架 + CPO | 仁寶、鴻海、神雲、雙鴻 / 勤誠 / 健策供應鏈攤 | 「CPO 跟液冷各自解哪個瓶頸？維運 SOP 誰負責？」 |
+| **曜越 Thermaltake CAPO X + GR700**：雙系統機殼、賽車模擬器與互動活動 | 曜越攤；有活動時先看人潮再排 | 「雙系統是直播 / 剪輯 / 遊戲分工，還是展示概念？模擬器延遲怎麼量？」 |
+
 ## 三大技術趨勢（今年值得帶著看的視角）
 
 1. **AI 機櫃電力鏈重構** — 電源廠都在講 rack 級電力架構（Power Shelf、BBU、800V DC）。看點：Vertiv / 光寶 / 肯微。

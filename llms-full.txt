@@ -1,19 +1,20 @@
 # COMPUTEX 2026 AI Guide
 
-> Structured, AI-readable booth and visitor data for COMPUTEX Taipei 2026 (June 2-5, 2026). Curated so AI assistants can help visitors navigate the show: find booths, plan routes, avoid pitfalls. Unofficial compilation; booth numbers verified 2026-06-01 against the official exhibitor search. Primary language: Traditional Chinese (zh-TW).
+> Structured, AI-readable booth and visitor data for COMPUTEX Taipei 2026 (June 2-5, 2026). Curated so AI assistants can help visitors navigate the show: find booths, plan routes, avoid pitfalls. Unofficial compilation; booth numbers verified 2026-06-01 against the official exhibitor search; show-period updates (awards, announcements, online platform) added 2026-06-03. Primary language: Traditional Chinese (zh-TW).
 
-Key facts: Public day is June 5 only (TaiNEX halls close 15:30, TWTC Hall 1 closes 16:30). Industry professionals/investors can register on-site for free (valid all 4 days; bring business cards, eligibility verified on-site). General public ticket NT$200, age 18+, on-site sales end 15:00. InnoVEX startup zone (TaiNEX 2, 4F) is open through June 5; its Pitch award ceremony was held June 4.
+Key facts: Public day is June 5 only (TaiNEX halls close 15:30, TWTC Hall 1 closes 16:30). Industry professionals/investors can register on-site for free (valid all 4 days; bring business cards, eligibility verified on-site). General public ticket NT$200, age 18+, on-site sales end 15:00. InnoVEX startup zone (TaiNEX 2, 4F) is open through June 5; its Pitch award ceremony was held June 4. Best Choice Award 2026 winners (announced June 2) include NVIDIA Vera Rubin NVL72 (Best Choice of the Year), ASUS/ROG (10 awards), GIGABYTE, and MSI; see them all at the BC Award showcase zone (TaiNEX 2, 4F, R-zone entrance). Can't attend? COMPUTEX Online content (Technology Unboxing, COMPUTOUR booth tours, Forum replays) is free on the official YouTube channel, no registration needed, still available after the show.
 
 ## Data (JSON, structured)
 
-- [Exhibitors & booths](data/exhibitors.json): 19 key exhibitors with verified booth numbers, zones, highlights, and suggested questions to ask; plus zone-level lists for ~60 more exhibitors
+- [Exhibitors & booths](data/exhibitors.json): 19 key exhibitors with verified booth numbers, zones, highlights, and suggested questions to ask; plus zone-level lists for ~60 more exhibitors, Best Choice Award 2026 winners, and major show announcements (June 1-3)
 - [Venues, hours & tickets](data/halls.json): all 3 venues with floors/zones, daily opening hours, MRT access, inter-venue transportation, ticket options
 - [Official tour routes](data/tour-routes.json): 12 official guided-tour routes (TWTC + Nangang) with stop-by-stop highlights
 
 ## Docs (Markdown, human-readable)
 
 - [Visiting info](docs/visiting-info.md): tickets, entry options, pitfall list, checklist, official links
-- [Booth guide](docs/booth-guide.md): curated must-see booths with "what to ask the PM" suggestions and 3 tech trends to watch
+- [Booth guide](docs/booth-guide.md): curated must-see booths with "what to ask the PM" suggestions, Best Choice Award 2026 winners by booth, major show announcements (June 1-3), and 3 tech trends to watch
+- [COMPUTEX Online guide](docs/computex-online.md): how to watch Technology Unboxing, COMPUTOUR booth tours, and Forum replays online for free (official YouTube, no registration, available after the show)
 
 ## Optional
 
@@ -32,7 +33,7 @@ When a user asks "where is X" or "plan my COMPUTEX visit", load data/exhibitors.
 <!-- ===== docs/visiting-info.md ===== -->
 # COMPUTEX 2026 觀展資訊（票務 / 入場 / 避坑）
 
-> 資料驗證日：2026-06-01。出發前以[官方參觀資訊](https://www.computextaipei.com.tw/zh-tw/menu/49C82382AF144873D0636733C6861689/info.html)最新公告為準。
+> 資料驗證日：2026-06-01（2026-06-03 增補線上平台資訊）。出發前以[官方參觀資訊](https://www.computextaipei.com.tw/zh-tw/menu/49C82382AF144873D0636733C6861689/info.html)最新公告為準。
 
 ## 基本資料
 
@@ -72,7 +73,7 @@ When a user asks "where is X" or "plan my COMPUTEX visit", load data/exhibitors.
 | 1 | 南港 15:30 就關 | 想看 AI 伺服器 / 機房設施的，南港排上午或一早 |
 | 2 | 11:00–13:00 人潮最高峰 | 開門 09:30 就進場，先衝人氣攤位 |
 | 3 | 14:00–14:45 兩館之間交通壅塞 | 跨館移動安排在 12:30–13:00（順便吃午餐避峰） |
-| 4 | Keynote 都結束了（6/1–6/2 已過） | 6/5 重心是逛攤 + 互動 demo，不要期待演講 |
+| 4 | Keynote 都結束了（6/1–6/2 已過） | 6/5 重心是逛攤 + 互動 demo；想看演講上[官方 YouTube](https://www.youtube.com/@COMPUTEXTAIPEIshow) 回放（詳見[線上平台指南](computex-online.md)） |
 | 5 | InnoVEX 舞台活動已過 | 新創展區（南港 2 館 4F S 區，近 500 家新創）**開放至 6/5 可逛**；但 Pitch 頒獎典禮 6/4 已辦完，別期待競賽節目 |
 | 6 | 熱門攤位排隊 15 分鐘以上 | 直接跳過先逛別攤；時程比單一攤位重要 |
 | 7 | 資訊過載 + 腳力崩潰 | 帶水 + 行動電源；累了找休息區 |
@@ -93,7 +94,14 @@ When a user asks "where is X" or "plan my COMPUTEX visit", load data/exhibitors.
 | https://www.computextaipei.com.tw/zh-tw/menu/49C82382AF144873D0636733C6861689/info.html | 參觀資訊 |
 | https://taitix.com.tw/event/detail/100003/computex26 | TaiTIX 購票 |
 | https://www.computextaipei.com.tw/en/exhibitor/index.html | 參展商 / 攤位查詢 |
+| https://www.youtube.com/@COMPUTEXTAIPEIshow | 官方 YouTube（COMPUTOUR 線上逛展 / 開箱節目 / 演講回放） |
+| https://www.computex.biz/ | 展商產品平台（Featured Products / 廠商聯絡） |
 | 官方 APP | App Store / Google Play 搜「COMPUTEX」 |
+
+## 不能到現場？線上也能逛
+
+COMPUTEX Online（6/2 起）：Technology Unboxing 開箱節目、COMPUTOUR 攤位直擊、Forum 演講回放，全部在官方 YouTube **免費免註冊**，展後仍可回看。
+完整說明 → [COMPUTEX Online 線上平台指南](computex-online.md)
 
 <!-- ===== docs/booth-guide.md ===== -->
 # COMPUTEX 2026 必看攤位導覽（含「可以問什麼」）
@@ -138,21 +146,113 @@ When a user asks "where is X" or "plan my COMPUTEX visit", load data/exhibitors.
 > 2. 如果 PM 只能回行銷話術、給不出實測數字 → 標「待查」，不用在現場下結論。
 > 3. 大眾日 PM 已經累了 — 問題精簡，一次問一兩個就好。
 
+## 🏆 Best Choice Award 2026 得獎產品 — 哪攤看得到
+
+> 6/2 公布的年度得獎名單，最快懶人包：先去南港 2 館 4F **BC Award 得獎展示區**（R 區入口左側）一站掃完，再挑想深入問的原廠攤。
+
+| 得獎 | 產品 | 哪裡看 / 可以問什麼 |
+|---|---|---|
+| 年度大獎 + Golden + 永續獎 | **NVIDIA Vera Rubin NVL72**（72 GPU + 36 CPU 液冷機櫃） | 南港 1 館 4F 鴻海 / 仁寶等 ODM 攤看液冷機架；BC Award 展示區看官方得獎版。問：「這櫃的供電、散熱、維修誰負責？」 |
+| Golden Award | **NVIDIA Jetson Thor**（機器人運算平台） | 世貿一館機器人區各攤，研華等夥伴可問。問：「推論跑在 Thor 還是雲端？失敗怎麼復原？」 |
+| Golden Award | **ROG G1000 Edition 20** 電競桌機 | 南港 1 館 4F ASUS（AI PC 生態系區）。問：「本機 AI / 遊戲負載同時跑，功耗和噪音怎麼控？」 |
+| 永續獎 | **ASUS ExpertBook Ultra** | 同上。問：「永續設計是材料、維修性，還是電池壽命？」 |
+| 類別獎（AI Computing） | **ASUS Ascent GX10** | 同上。問：「這台適合本機模型開發，還是偏展示型 workstation？」 |
+| 類別獎（Gaming）×3 | **ROG Zephyrus Duo (2026)** / **ROG Flow Z13** / **ROG Rapture GT-BN98 Pro** | 同上。問：「DLSS 4.5 / NPU / 網通加速，現場哪個 demo 看得到？」 |
+| 類別獎（Computer & System）×3 | **ASUS Zenbook DUO** / **ProArt PX13** / **ROG Thor 3000W** 電源 | 同上。問：「雙螢幕工作流、創作者 AI、3000W 電源各自解什麼痛點？」 |
+| 類別獎 | **GIGABYTE X870E AORUS XTREME X3D AI TOP** 主機板（同場發表 40 週年限定版） | 南港 1 館 1F **K0802** 技嘉攤。問：「AI TOP 對一般玩家是調校工具，還是真的能省時間？」 |
+| 類別獎 | **MSI MPG Ai TS-Series** 電源 | 南港 1 館 1F **J0605a** 微星攤。問：「AI 電源偵測能提前抓到哪些故障？」 |
+| 類別獎（車用） | **NVIDIA Alpamayo** 自駕推理模型 | 南港 1 館 4F 智慧移動區。問：「模型展示是感知、規劃，還是純推論 benchmark？」 |
+| 類別獎（醫療，三連霸） | **Wincomm WMP-2xU** 醫療工作站 | 用官方 APP 查 Wincomm 攤位。問：「醫療場域最難的是效能、認證，還是長期供貨？」 |
+
+## 📰 展期重大發表（6/1–6/3）— 大眾日現場還能看什麼
+
+| 發表 / 觀察 | 現場看哪裡 | 可以問什麼 |
+|---|---|---|
+| **NVIDIA Vera Rubin NVL72 全面量產**（GTC Taipei keynote 6/1） | 鴻海、仁寶、神雲等 ODM 攤的液冷機櫃就是這條生態鏈 | 「這是展示櫃還是量產配置？維修時要停整櫃還是可抽換？」 |
+| **RTX Spark**：NVIDIA 與聯發科合作的 Windows PC 晶片，Blackwell GPU + Grace CPU | 聯發科攤（南港 1 館 4F）可問；AI PC 區留意合作展示 | 「這會先進筆電、迷你 PC，還是開發板？本機模型能跑到什麼尺寸？」 |
+| **Jetson Thor** 機器人平台（約 2070 FP4 TFLOPS） | 世貿一館機器人區夥伴攤 | 「機器人 demo 的瓶頸是算力、感測器，還是軟體整合？」 |
+| **DLSS 4.5** 發表 | ASUS / MSI / GIGABYTE 電競攤 | 「現場 demo 是實機跑還是影片？開關 DLSS 後延遲差多少？」 |
+| **NVIDIA Constellation**：北投士林科技園區新總部，約 4 公頃、4000 員工 | 這不是展場產品，但會影響台灣 AI 生態敘事 | 「台灣團隊會做研發、驗證，還是主要做夥伴支援？」 |
+| **Intel Core Ultra Series 3 + Perplexity 混合推論展示**（keynote 6/2） | Intel / AI PC 相關攤位 | 「哪些任務留本地、哪些丟雲端？斷網時功能剩多少？」 |
+| **AMD Ryzen AI Halo mini PC** | AMD 生態與迷你 PC 相關攤位 | 「NPU、iGPU、CPU 各跑什麼？本機 AI 跑久了散熱怎麼辦？」 |
+| **液冷是今年 ODM 標配**：仁寶「The Engine of Intelligence」、鴻海液冷機架 + CPO | 仁寶、鴻海、神雲、雙鴻 / 勤誠 / 健策供應鏈攤 | 「CPO 跟液冷各自解哪個瓶頸？維運 SOP 誰負責？」 |
+| **曜越 Thermaltake CAPO X + GR700**：雙系統機殼、賽車模擬器與互動活動 | 曜越攤；有活動時先看人潮再排 | 「雙系統是直播 / 剪輯 / 遊戲分工，還是展示概念？模擬器延遲怎麼量？」 |
+
 ## 三大技術趨勢（今年值得帶著看的視角）
 
 1. **AI 機櫃電力鏈重構** — 電源廠都在講 rack 級電力架構（Power Shelf、BBU、800V DC）。看點：Vertiv / 光寶 / 肯微。
 2. **液冷比的是「可維運性」** — 不再只是能不能散熱，而是壞了怎麼修。看點：雙鴻 / 勤誠 / 神雲。
 3. **機器人 demo 要拆著看** — demo 成功 ≠ 量產可用。看點：立端 / 所羅門 / 研華。問「推論跑哪、失敗怎麼復原」。
 
+<!-- ===== docs/computex-online.md ===== -->
+# COMPUTEX 2026 Online 線上平台指南（節目 / 逛展 / 論壇回看）
+
+> 資料驗證日：2026-06-03。本指南為非官方整理，線上平台各節目上架時間與播放平台以官方最新公告為準。
+
+## COMPUTEX Online 是什麼？
+
+COMPUTEX Online 是 COMPUTEX 2026 官方為了無法親臨現場的全球觀眾、或是想要在展後重溫亮點的人所規劃的「數位觀展平台」。它整合了官方網站與 YouTube 影音資源，提供新產品開箱、攤位直擊、論壇演講錄影等豐富內容，讓你在家也能跟上 2026 最熱門的 AI 浪潮！
+
+---
+
+## 四大內容區塊
+
+| 區塊名稱 | 內容說明 | 怎麼看 / 哪裡看 |
+| :--- | :--- | :--- |
+| **Technology Unboxing**<br>（科技開箱節目） | 聚焦本次參展的最新產品與前沿技術，由專家或廠商代表親自「開箱」講解。已上線主題包含：<br>1. **E Ink 元太科技**：彩色電子紙 Spectra 6 與大尺寸電子紙應用<br>2. **MSI 微星科技**：Eco 系列智慧 EV 充電樁<br>3. **Wiwynn 緯穎**：先進液冷散熱與資料中心基礎設施<br>4. **Cupola360**：全景遠端管理技術<br>5. **具身智能機器人**：EVERBRITE (OD-EG1) 機器人展示 | 於 [COMPUTEX YouTube 頻道](https://www.youtube.com/@COMPUTEXTAIPEIshow) 免費觀看，隨選隨播。 |
+| **Featured Products**<br>（精選產品） | 官方精選本次參展的優質廠商產品，包括 Best Choice Award (BC Award) 得獎產品及永續設計獎 (Sustainable Design Award) 參選產品。 | 透過官方網站的 [computex.biz](https://www.computex.biz/) 與 BC Award 專區查詢產品規格與介紹。 |
+| **COMPUTEX Forum**<br>（論壇演講） | 展覽期間（6/2–6/4）召開的官方論壇及主題演講 (Keynotes)。<br>- **熱門主題**：機器人與實體 AI、AI 運算與基礎架構、生成式 AI 等。<br>- **科技巨頭演講**：包括 NVIDIA 黃仁勳（發表 Vera Rubin 量產與實體 AI）、Intel 陳立武（Lip-Bu Tan）、Marvell Matt Murphy 等。 | - 官方論壇實體門票已售罄。<br>- 演講及論壇錄影可至 [COMPUTEX YouTube 頻道](https://www.youtube.com/@COMPUTEXTAIPEIshow) 或各大廠官方 YouTube 頻道（如 NVIDIA, Intel 等）觀看現場直播重播。 |
+| **COMPUTOUR**<br>（線上逛展） | 官方特派員帶你深入展場，直接到熱門大廠攤位開箱直擊（如 Astera Labs、雙鴻 AURAS 等），並提供每日展場精華 (Day 1 Highlights)。 | 於 [COMPUTEX YouTube 頻道](https://www.youtube.com/@COMPUTEXTAIPEIshow) 專屬播放清單免費觀看。 |
+
+---
+
+## 怎麼進入與觀看？
+
+| 平台 / 管道 | 網址 | 是否需要註冊？ | 備註說明 |
+| :--- | :--- | :--- | :--- |
+| **官方 YouTube 頻道** | [COMPUTEX YouTube Channel](https://www.youtube.com/@COMPUTEXTAIPEIshow) | **免註冊**，完全免費 | 包含 Technology Unboxing, COMPUTOUR, 論壇精華及部分演講錄影。 |
+| **官方展商產品平台** | [computex.biz](https://www.computex.biz/) | **免註冊**即可瀏覽<br>（部分進階互動需註冊） | 適合查詢精選產品 (Featured Products) 與參展商聯絡資訊。 |
+| **官方網站主頁** | [computextaipei.com.tw](https://www.computextaipei.com.tw) | **免註冊** | 查閱每日活動時程表、大會新聞稿與大會公告。 |
+
+### 💡 展後還能看嗎？
+* **可以！** 官方 YouTube 上的 Technology Unboxing、COMPUTOUR、現場 Highlights 以及各大廠主題演講錄影（如 NVIDIA 黃仁勳 Keynote），在展覽結束（6/5）之後都會持續保留在平台上，供全球觀眾隨時點閱與回顧。
+
+---
+
+## 線上平台與實體觀展搭配攻略
+
+如果你打算 6/5（五）大眾日衝現場，或者是想遠端深度參與，可以這樣搭配：
+
+1. **出發前「線上探路」**：
+   - 6/3–6/4 先上 YouTube 看最新的 **COMPUTOUR** 與 **Technology Unboxing** 影片，了解今年南港展覽館 1 館、2 館的亮點攤位（例如雙鴻、緯穎的液冷展示）。
+   - 透過影片畫面評估現場攤位的排隊與精彩程度，將想看的點標記在你的現場地圖上，避開現場盲目尋找的窘境。
+2. **展期中「補完演講」**：
+   - 現場時間寶貴（6/5 南港展覽館 15:30 就關門），請把時間全部留給「逛攤位、體驗 Demo、拿紀念品、與廠商交流」。
+   - 主題演講 (Keynotes) 與 Forum 的知識內容，可以留到晚上搭車或展後回家時，再到官方 YouTube 頻道看重播回顧。
+3. **展後「聯絡窗口」**：
+   - 在展場看到感興趣的產品，若現場人太多沒能跟廠商聊到，可以事後上 [computex.biz](https://www.computex.biz/) 搜尋該產品或廠商，透過平台線上管道與其取得聯繫。
+
+---
+
+## 來源參考
+
+* COMPUTEX TAIPEI 官方網站：[https://www.computextaipei.com.tw](https://www.computextaipei.com.tw)
+* COMPUTEX TAIPEI 官方 YouTube 頻道：[https://www.youtube.com/@COMPUTEXTAIPEIshow](https://www.youtube.com/@COMPUTEXTAIPEIshow)
+* COMPUTEX 展商產品平台：[https://www.computex.biz](https://www.computex.biz)
+* 廠商影音來源範例：
+  - NVIDIA 官方 Keynote 重播：[YouTube](https://www.youtube.com/@NVIDIA)
+  - Intel 官方媒體中心：[Intel Newsroom](https://www.intel.com)
+
 <!-- ===== data/exhibitors.json ===== -->
-```json
 {
   "meta": {
     "title": "COMPUTEX 2026 Exhibitor Booth Data (Curated)",
     "title_zh": "COMPUTEX 2026 參展廠商攤位資料（精選整理）",
     "event_dates": "2026-06-02 ~ 2026-06-05",
     "verified_at": "2026-06-01",
-    "source": "COMPUTEX official exhibitor search (computextaipei.com.tw) + official guide handbook + official tour route PDFs",
+    "last_updated": "2026-06-03",
+    "update_note_zh": "2026-06-03 增補：Best Choice Award 2026 得獎名單（6/2 公布）+ 展期重大發表標記",
+    "source": "COMPUTEX official exhibitor search (computextaipei.com.tw) + official guide handbook + official tour route PDFs + BC Award announcements (2026-06-02)",
     "disclaimer": "Unofficial compilation for visitor convenience. Booth numbers verified 2026-06-01 against official exhibitor search; always cross-check with the official COMPUTEX app on-site.",
     "disclaimer_zh": "非官方整理，僅供觀展便利。攤位號 2026-06-01 對官方參展商查詢驗證；現場請以官方 APP 為準。",
     "official_search_url": "https://www.computextaipei.com.tw/en/exhibitor/index.html"
@@ -325,7 +425,8 @@ When a user asks "where is X" or "plan my COMPUTEX visit", load data/exhibitors.
       "booth": "J0605a",
       "priority": "worth-visiting",
       "categories": ["ai-pc", "edge-ai", "consumer"],
-      "highlights_zh": ["AI PC 至工業車用全品類", "Edge AI Box 工業電腦"],
+      "highlights_zh": ["AI PC 至工業車用全品類", "Edge AI Box 工業電腦", "🏆 MPG Ai TS-Series 電源獲 BC Award 2026"],
+      "awards_2026": ["Best Choice Award: MPG Ai TS-Series 電源供應器"],
       "secondary_booths": [{"venue": "TaiNEX 1", "floor": "4F", "zone": "System Integration Solution", "booth": "L0118", "note_zh": "4F 系統整合區第二攤"}]
     },
     {
@@ -401,7 +502,8 @@ When a user asks "where is X" or "plan my COMPUTEX visit", load data/exhibitors.
       "booth": "K0802",
       "priority": "recommended",
       "categories": ["ai-server", "ai-pc", "consumer"],
-      "highlights_zh": ["AI 運算設備（消費電腦至企業資料中心全品類）", "turnkey cluster 方案"],
+      "highlights_zh": ["AI 運算設備（消費電腦至企業資料中心全品類）", "turnkey cluster 方案", "🏆 X870E AORUS XTREME X3D AI TOP 主機板獲 BC Award 2026（同場發表 40 週年限定 X870E/X870 AORUS INFINITY 系列）"],
+      "awards_2026": ["Best Choice Award: X870E AORUS XTREME X3D AI TOP"],
       "secondary_booths": [{"venue": "TaiNEX 1", "floor": "4F", "zone": "System Integration Solution", "booth": "M0520", "note_zh": "4F 系統整合區第二攤"}]
     },
     {
@@ -468,15 +570,44 @@ When a user asks "where is X" or "plan my COMPUTEX visit", load data/exhibitors.
     "TWTC Hall 1 - TechXperience (科技應用暨體驗館)": ["德隆", "僑威", "貝瑞特", "威世波", "高瑞電氣", "超能配電", "恆顥", "宇晨"],
     "TaiNEX 2 - 4F Storage (儲存及管理解決方案區)": ["創見 Transcend", "華擎 ASRock", "英業達 Inventec", "芝奇 G.SKILL", "十銓 Team Group", "中環 CMC", "博帝 Patriot", "華騰"],
     "TaiNEX 2 - 1F (智慧商業/工業物聯網/消費周邊)": ["威強電 IEI", "智愛 Premio", "凌航 Neo Forza", "虹堡 CASTLES", "振樺 POSIFLEX", "飛捷 Flytech", "磐儀 ARBOR", "安鈦克 Antec"],
-    "TaiNEX 1 - 4F System Integration (系統及解決方案/AI PC 生態系)": ["宏碁 Acer", "華碩 ASUS", "威剛 ADATA", "明基 BenQ", "仁寶 COMPAL", "台達 Delta", "鴻海 Foxconn", "聯發科 MediaTek", "和碩 Pegatron", "三星 Samsung", "趨勢 Trend Micro", "信驊 ASPEED", "RISC-V 主題館（台灣智慧物聯網產業協會）"],
+    "TaiNEX 1 - 4F System Integration (系統及解決方案/AI PC 生態系)": ["宏碁 Acer", "華碩 ASUS（🏆 BC Award 2026 共 10 獎：ROG G1000 Golden Award / ExpertBook Ultra 永續獎 / Ascent GX10 / Zenbook DUO 等）", "威剛 ADATA", "明基 BenQ", "仁寶 COMPAL（液冷方案 The Engine of Intelligence）", "台達 Delta", "鴻海 Foxconn（液冷機架 + CPO 共封裝光學）", "聯發科 MediaTek（與 NVIDIA 合作 RTX Spark PC 晶片）", "和碩 Pegatron（機器人方案）", "三星 Samsung", "趨勢 Trend Micro", "信驊 ASPEED", "RISC-V 主題館（台灣智慧物聯網產業協會）"],
     "TaiNEX 1 - 4F Smart Mobility (智慧移動與無人載具區)": ["義隆 ELAN", "中興保全 SECOM", "馳諾瓦 Zerova", "貿聯 BizLink", "台灣先進車用主題館 TADA"],
     "TaiNEX 2 - 4F InnoVEX (新創區)": ["近 500 家新創、22 國、9 個國家館（法國/日本/韓國/泰國/澳洲/以色列/加拿大/義大利/捷克）— 展區開放至 6/5；Pitch Contest 頒獎典禮已於 6/4 舉行，6/5 適合逛攤交流、別期待舞台節目"]
+  },
+  "best_choice_awards_2026": {
+    "_note_zh": "Best Choice Award 2026 得獎名單（2026-06-02 公布）。南港 2 館 4F R 區入口左側『BC Award 得獎展示區』可一站看完得獎產品實機。",
+    "announced_at": "2026-06-02",
+    "verified_at": "2026-06-03",
+    "source": "BC Award official (bcaward.computex.biz) + vendor press releases",
+    "winners": [
+      {"company_en": "NVIDIA", "company_zh": "輝達", "product": "Vera Rubin NVL72", "awards": ["Best Choice of the Year（年度大獎）", "Golden Award", "Sustainable Tech Special Award"], "where_to_see_zh": "南港 1 館 4F 鴻海／仁寶等 ODM 攤的液冷機櫃生態 + BC Award 展示區"},
+      {"company_en": "NVIDIA", "company_zh": "輝達", "product": "Jetson Thor", "awards": ["Golden Award"], "where_to_see_zh": "世貿一館機器人區夥伴攤位（研華等）"},
+      {"company_en": "NVIDIA", "company_zh": "輝達", "product": "Alpamayo", "awards": ["Vehicle Technology & Smart Cockpit Category"], "where_to_see_zh": "南港 1 館 4F 智慧移動與無人載具區"},
+      {"company_en": "ASUS ROG", "company_zh": "華碩", "product": "ROG G1000 Edition 20 電競桌機", "awards": ["Golden Award"], "where_to_see_zh": "南港 1 館 4F ASUS（AI PC 生態系區）"},
+      {"company_en": "ASUS", "company_zh": "華碩", "product": "ExpertBook Ultra", "awards": ["Sustainable Tech Special Award"], "where_to_see_zh": "南港 1 館 4F ASUS"},
+      {"company_en": "ASUS / ROG", "company_zh": "華碩", "product": "Ascent GX10 / Zenbook DUO (UX8407) / ProArt PX13 / ROG Zephyrus Duo (2026) / ROG Flow Z13-KJP / ROG Rapture GT-BN98 Pro / ROG Thor 3000W Titanium III / ROG Cetra Open Wireless", "awards": ["Category Awards（ASUS 全公司共 10 獎）"], "where_to_see_zh": "南港 1 館 4F ASUS"},
+      {"company_en": "GIGABYTE", "company_zh": "技嘉", "product": "X870E AORUS XTREME X3D AI TOP 主機板", "awards": ["Category Award"], "where_to_see_zh": "南港 1 館 1F K0802 技嘉攤"},
+      {"company_en": "MSI", "company_zh": "微星", "product": "MPG Ai TS-Series 電源供應器", "awards": ["Category Award"], "where_to_see_zh": "南港 1 館 1F J0605a 微星攤"},
+      {"company_en": "Wincomm", "company_zh": "緯凡", "product": "WMP-2xU 智慧行動醫療工作站", "awards": ["Category Award（2024-2026 三連霸）"], "where_to_see_zh": "官方 APP 查 Wincomm 攤位"}
+    ]
+  },
+  "show_announcements_2026": {
+    "_note_zh": "展期重大發表（6/1–6/3），觀展者可在對應攤位看到相關產品／生態",
+    "verified_at": "2026-06-03",
+    "items": [
+      {"company": "NVIDIA", "announcement_zh": "Vera Rubin NVL72 全面量產（36 Vera CPU + 72 Rubin GPU 液冷機櫃）", "see_at_show_zh": "鴻海／仁寶／神雲等 ODM 攤液冷機架"},
+      {"company": "NVIDIA + MediaTek", "announcement_zh": "RTX Spark — Windows PC 晶片（Blackwell GPU 6144 CUDA + 20 核 Grace CPU）", "see_at_show_zh": "南港 1 館 4F 聯發科攤可問"},
+      {"company": "NVIDIA", "announcement_zh": "Jetson Thor 機器人平台（~2070 FP4 TFLOPS）+ GR00T 1.7 + Isaac Sim 6.0", "see_at_show_zh": "世貿一館機器人區"},
+      {"company": "NVIDIA", "announcement_zh": "DLSS 4.5 發表", "see_at_show_zh": "ASUS / MSI / GIGABYTE 電競攤"},
+      {"company": "NVIDIA", "announcement_zh": "Constellation 台北新總部（北投士林科技園區，~4 公頃）", "see_at_show_zh": "—（新聞性質）"},
+      {"company": "Intel", "announcement_zh": "Core Ultra Series 3 + Perplexity 雲端/本地混合推論展示", "see_at_show_zh": "Intel 生態夥伴攤"},
+      {"company": "AMD", "announcement_zh": "Ryzen AI Halo mini PC", "see_at_show_zh": "AMD 生態夥伴攤（神雲等）"},
+      {"company": "曜越 Thermaltake", "announcement_zh": "CAPO X 雙系統機殼 + GR700 賽車模擬器（賽車手互動活動）", "see_at_show_zh": "曜越攤（官方 APP 查攤位）"}
+    ]
   }
 }
-```
 
 <!-- ===== data/halls.json ===== -->
-```json
 {
   "meta": {
     "title": "COMPUTEX 2026 Venues, Hours & Access",
@@ -632,10 +763,8 @@ When a user asks "where is X" or "plan my COMPUTEX visit", load data/exhibitors.
     ]
   }
 }
-```
 
 <!-- ===== data/tour-routes.json ===== -->
-```json
 {
   "meta": {
     "title": "COMPUTEX 2026 Official Guided Tour Routes",
@@ -806,4 +935,4 @@ When a user asks "where is X" or "plan my COMPUTEX visit", load data/exhibitors.
     }
   ]
 }
-```
+

@@ -1,19 +1,20 @@
 # COMPUTEX 2026 AI Guide
 
-> Structured, AI-readable booth and visitor data for COMPUTEX Taipei 2026 (June 2-5, 2026). Curated so AI assistants can help visitors navigate the show: find booths, plan routes, avoid pitfalls. Unofficial compilation; booth numbers verified 2026-06-01 against the official exhibitor search. Primary language: Traditional Chinese (zh-TW).
+> Structured, AI-readable booth and visitor data for COMPUTEX Taipei 2026 (June 2-5, 2026). Curated so AI assistants can help visitors navigate the show: find booths, plan routes, avoid pitfalls. Unofficial compilation; booth numbers verified 2026-06-01 against the official exhibitor search; show-period updates (awards, announcements, online platform) added 2026-06-03. Primary language: Traditional Chinese (zh-TW).
 
-Key facts: Public day is June 5 only (TaiNEX halls close 15:30, TWTC Hall 1 closes 16:30). Industry professionals/investors can register on-site for free (valid all 4 days; bring business cards, eligibility verified on-site). General public ticket NT$200, age 18+, on-site sales end 15:00. InnoVEX startup zone (TaiNEX 2, 4F) is open through June 5; its Pitch award ceremony was held June 4.
+Key facts: Public day is June 5 only (TaiNEX halls close 15:30, TWTC Hall 1 closes 16:30). Industry professionals/investors can register on-site for free (valid all 4 days; bring business cards, eligibility verified on-site). General public ticket NT$200, age 18+, on-site sales end 15:00. InnoVEX startup zone (TaiNEX 2, 4F) is open through June 5; its Pitch award ceremony was held June 4. Best Choice Award 2026 winners (announced June 2) include NVIDIA Vera Rubin NVL72 (Best Choice of the Year), ASUS/ROG (10 awards), GIGABYTE, and MSI; see them all at the BC Award showcase zone (TaiNEX 2, 4F, R-zone entrance). Can't attend? COMPUTEX Online content (Technology Unboxing, COMPUTOUR booth tours, Forum replays) is free on the official YouTube channel, no registration needed, still available after the show.
 
 ## Data (JSON, structured)
 
-- [Exhibitors & booths](data/exhibitors.json): 19 key exhibitors with verified booth numbers, zones, highlights, and suggested questions to ask; plus zone-level lists for ~60 more exhibitors
+- [Exhibitors & booths](data/exhibitors.json): 19 key exhibitors with verified booth numbers, zones, highlights, and suggested questions to ask; plus zone-level lists for ~60 more exhibitors, Best Choice Award 2026 winners, and major show announcements (June 1-3)
 - [Venues, hours & tickets](data/halls.json): all 3 venues with floors/zones, daily opening hours, MRT access, inter-venue transportation, ticket options
 - [Official tour routes](data/tour-routes.json): 12 official guided-tour routes (TWTC + Nangang) with stop-by-stop highlights
 
 ## Docs (Markdown, human-readable)
 
 - [Visiting info](docs/visiting-info.md): tickets, entry options, pitfall list, checklist, official links
-- [Booth guide](docs/booth-guide.md): curated must-see booths with "what to ask the PM" suggestions and 3 tech trends to watch
+- [Booth guide](docs/booth-guide.md): curated must-see booths with "what to ask the PM" suggestions, Best Choice Award 2026 winners by booth, major show announcements (June 1-3), and 3 tech trends to watch
+- [COMPUTEX Online guide](docs/computex-online.md): how to watch Technology Unboxing, COMPUTOUR booth tours, and Forum replays online for free (official YouTube, no registration, available after the show)
 
 ## Optional
 

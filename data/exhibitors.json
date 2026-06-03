@@ -4,7 +4,9 @@
     "title_zh": "COMPUTEX 2026 參展廠商攤位資料（精選整理）",
     "event_dates": "2026-06-02 ~ 2026-06-05",
     "verified_at": "2026-06-01",
-    "source": "COMPUTEX official exhibitor search (computextaipei.com.tw) + official guide handbook + official tour route PDFs",
+    "last_updated": "2026-06-03",
+    "update_note_zh": "2026-06-03 增補：Best Choice Award 2026 得獎名單（6/2 公布）+ 展期重大發表標記",
+    "source": "COMPUTEX official exhibitor search (computextaipei.com.tw) + official guide handbook + official tour route PDFs + BC Award announcements (2026-06-02)",
     "disclaimer": "Unofficial compilation for visitor convenience. Booth numbers verified 2026-06-01 against official exhibitor search; always cross-check with the official COMPUTEX app on-site.",
     "disclaimer_zh": "非官方整理，僅供觀展便利。攤位號 2026-06-01 對官方參展商查詢驗證；現場請以官方 APP 為準。",
     "official_search_url": "https://www.computextaipei.com.tw/en/exhibitor/index.html"
@@ -177,7 +179,8 @@
       "booth": "J0605a",
       "priority": "worth-visiting",
       "categories": ["ai-pc", "edge-ai", "consumer"],
-      "highlights_zh": ["AI PC 至工業車用全品類", "Edge AI Box 工業電腦"],
+      "highlights_zh": ["AI PC 至工業車用全品類", "Edge AI Box 工業電腦", "🏆 MPG Ai TS-Series 電源獲 BC Award 2026"],
+      "awards_2026": ["Best Choice Award: MPG Ai TS-Series 電源供應器"],
       "secondary_booths": [{"venue": "TaiNEX 1", "floor": "4F", "zone": "System Integration Solution", "booth": "L0118", "note_zh": "4F 系統整合區第二攤"}]
     },
     {
@@ -253,7 +256,8 @@
       "booth": "K0802",
       "priority": "recommended",
       "categories": ["ai-server", "ai-pc", "consumer"],
-      "highlights_zh": ["AI 運算設備（消費電腦至企業資料中心全品類）", "turnkey cluster 方案"],
+      "highlights_zh": ["AI 運算設備（消費電腦至企業資料中心全品類）", "turnkey cluster 方案", "🏆 X870E AORUS XTREME X3D AI TOP 主機板獲 BC Award 2026（同場發表 40 週年限定 X870E/X870 AORUS INFINITY 系列）"],
+      "awards_2026": ["Best Choice Award: X870E AORUS XTREME X3D AI TOP"],
       "secondary_booths": [{"venue": "TaiNEX 1", "floor": "4F", "zone": "System Integration Solution", "booth": "M0520", "note_zh": "4F 系統整合區第二攤"}]
     },
     {
@@ -320,8 +324,39 @@
     "TWTC Hall 1 - TechXperience (科技應用暨體驗館)": ["德隆", "僑威", "貝瑞特", "威世波", "高瑞電氣", "超能配電", "恆顥", "宇晨"],
     "TaiNEX 2 - 4F Storage (儲存及管理解決方案區)": ["創見 Transcend", "華擎 ASRock", "英業達 Inventec", "芝奇 G.SKILL", "十銓 Team Group", "中環 CMC", "博帝 Patriot", "華騰"],
     "TaiNEX 2 - 1F (智慧商業/工業物聯網/消費周邊)": ["威強電 IEI", "智愛 Premio", "凌航 Neo Forza", "虹堡 CASTLES", "振樺 POSIFLEX", "飛捷 Flytech", "磐儀 ARBOR", "安鈦克 Antec"],
-    "TaiNEX 1 - 4F System Integration (系統及解決方案/AI PC 生態系)": ["宏碁 Acer", "華碩 ASUS", "威剛 ADATA", "明基 BenQ", "仁寶 COMPAL", "台達 Delta", "鴻海 Foxconn", "聯發科 MediaTek", "和碩 Pegatron", "三星 Samsung", "趨勢 Trend Micro", "信驊 ASPEED", "RISC-V 主題館（台灣智慧物聯網產業協會）"],
+    "TaiNEX 1 - 4F System Integration (系統及解決方案/AI PC 生態系)": ["宏碁 Acer", "華碩 ASUS（🏆 BC Award 2026 共 10 獎：ROG G1000 Golden Award / ExpertBook Ultra 永續獎 / Ascent GX10 / Zenbook DUO 等）", "威剛 ADATA", "明基 BenQ", "仁寶 COMPAL（液冷方案 The Engine of Intelligence）", "台達 Delta", "鴻海 Foxconn（液冷機架 + CPO 共封裝光學）", "聯發科 MediaTek（與 NVIDIA 合作 RTX Spark PC 晶片）", "和碩 Pegatron（機器人方案）", "三星 Samsung", "趨勢 Trend Micro", "信驊 ASPEED", "RISC-V 主題館（台灣智慧物聯網產業協會）"],
     "TaiNEX 1 - 4F Smart Mobility (智慧移動與無人載具區)": ["義隆 ELAN", "中興保全 SECOM", "馳諾瓦 Zerova", "貿聯 BizLink", "台灣先進車用主題館 TADA"],
     "TaiNEX 2 - 4F InnoVEX (新創區)": ["近 500 家新創、22 國、9 個國家館（法國/日本/韓國/泰國/澳洲/以色列/加拿大/義大利/捷克）— 展區開放至 6/5；Pitch Contest 頒獎典禮已於 6/4 舉行，6/5 適合逛攤交流、別期待舞台節目"]
+  },
+  "best_choice_awards_2026": {
+    "_note_zh": "Best Choice Award 2026 得獎名單（2026-06-02 公布）。南港 2 館 4F R 區入口左側『BC Award 得獎展示區』可一站看完得獎產品實機。",
+    "announced_at": "2026-06-02",
+    "verified_at": "2026-06-03",
+    "source": "BC Award official (bcaward.computex.biz) + vendor press releases",
+    "winners": [
+      {"company_en": "NVIDIA", "company_zh": "輝達", "product": "Vera Rubin NVL72", "awards": ["Best Choice of the Year（年度大獎）", "Golden Award", "Sustainable Tech Special Award"], "where_to_see_zh": "南港 1 館 4F 鴻海／仁寶等 ODM 攤的液冷機櫃生態 + BC Award 展示區"},
+      {"company_en": "NVIDIA", "company_zh": "輝達", "product": "Jetson Thor", "awards": ["Golden Award"], "where_to_see_zh": "世貿一館機器人區夥伴攤位（研華等）"},
+      {"company_en": "NVIDIA", "company_zh": "輝達", "product": "Alpamayo", "awards": ["Vehicle Technology & Smart Cockpit Category"], "where_to_see_zh": "南港 1 館 4F 智慧移動與無人載具區"},
+      {"company_en": "ASUS ROG", "company_zh": "華碩", "product": "ROG G1000 Edition 20 電競桌機", "awards": ["Golden Award"], "where_to_see_zh": "南港 1 館 4F ASUS（AI PC 生態系區）"},
+      {"company_en": "ASUS", "company_zh": "華碩", "product": "ExpertBook Ultra", "awards": ["Sustainable Tech Special Award"], "where_to_see_zh": "南港 1 館 4F ASUS"},
+      {"company_en": "ASUS / ROG", "company_zh": "華碩", "product": "Ascent GX10 / Zenbook DUO (UX8407) / ProArt PX13 / ROG Zephyrus Duo (2026) / ROG Flow Z13-KJP / ROG Rapture GT-BN98 Pro / ROG Thor 3000W Titanium III / ROG Cetra Open Wireless", "awards": ["Category Awards（ASUS 全公司共 10 獎）"], "where_to_see_zh": "南港 1 館 4F ASUS"},
+      {"company_en": "GIGABYTE", "company_zh": "技嘉", "product": "X870E AORUS XTREME X3D AI TOP 主機板", "awards": ["Category Award"], "where_to_see_zh": "南港 1 館 1F K0802 技嘉攤"},
+      {"company_en": "MSI", "company_zh": "微星", "product": "MPG Ai TS-Series 電源供應器", "awards": ["Category Award"], "where_to_see_zh": "南港 1 館 1F J0605a 微星攤"},
+      {"company_en": "Wincomm", "company_zh": "緯凡", "product": "WMP-2xU 智慧行動醫療工作站", "awards": ["Category Award（2024-2026 三連霸）"], "where_to_see_zh": "官方 APP 查 Wincomm 攤位"}
+    ]
+  },
+  "show_announcements_2026": {
+    "_note_zh": "展期重大發表（6/1–6/3），觀展者可在對應攤位看到相關產品／生態",
+    "verified_at": "2026-06-03",
+    "items": [
+      {"company": "NVIDIA", "announcement_zh": "Vera Rubin NVL72 全面量產（36 Vera CPU + 72 Rubin GPU 液冷機櫃）", "see_at_show_zh": "鴻海／仁寶／神雲等 ODM 攤液冷機架"},
+      {"company": "NVIDIA + MediaTek", "announcement_zh": "RTX Spark — Windows PC 晶片（Blackwell GPU 6144 CUDA + 20 核 Grace CPU）", "see_at_show_zh": "南港 1 館 4F 聯發科攤可問"},
+      {"company": "NVIDIA", "announcement_zh": "Jetson Thor 機器人平台（~2070 FP4 TFLOPS）+ GR00T 1.7 + Isaac Sim 6.0", "see_at_show_zh": "世貿一館機器人區"},
+      {"company": "NVIDIA", "announcement_zh": "DLSS 4.5 發表", "see_at_show_zh": "ASUS / MSI / GIGABYTE 電競攤"},
+      {"company": "NVIDIA", "announcement_zh": "Constellation 台北新總部（北投士林科技園區，~4 公頃）", "see_at_show_zh": "—（新聞性質）"},
+      {"company": "Intel", "announcement_zh": "Core Ultra Series 3 + Perplexity 雲端/本地混合推論展示", "see_at_show_zh": "Intel 生態夥伴攤"},
+      {"company": "AMD", "announcement_zh": "Ryzen AI Halo mini PC", "see_at_show_zh": "AMD 生態夥伴攤（神雲等）"},
+      {"company": "曜越 Thermaltake", "announcement_zh": "CAPO X 雙系統機殼 + GR700 賽車模擬器（賽車手互動活動）", "see_at_show_zh": "曜越攤（官方 APP 查攤位）"}
+    ]
   }
 }
